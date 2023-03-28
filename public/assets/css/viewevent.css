@@ -1,0 +1,28 @@
+.card-body{
+
+}
+.form-control{
+    color:aquamarine;
+}
+.card-header{
+    background-color: aqua;
+}
+
+.container .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+.card-header{
+    font-size: larger;
+}
+  .cardHeader .btn {
+    position: relative;
+    padding: 5px 10px;
+    background: var(--blue);
+    text-decoration: none;
+    color: var(--white);
+    border-radius: 6px;
+  }
+  
+  

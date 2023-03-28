@@ -1,0 +1,342 @@
+
+
+
+
+/* ================== Reservation List ============== */
+.service-section {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    /* grid-template-columns: 2fr 1fr;
+    grid-gap: 10px; */
+    margin-top: 10px;
+  }
+  
+  .service-section .text_permission {
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    background: var(--white);
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+  }
+  
+  .service-section .container-fluid {
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .container-fluid h2 {
+    font-weight: 600;
+    color: var(--blue);
+  }
+  .container-fluid .btn-viewall {
+    position: relative;
+    padding: 5px 10px;
+    background: var(--blue);
+    text-decoration: none;
+    color: var(--white);
+    border-radius: 6px;
+  }
+  
+  
+  .service-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  .service-section table .thead-dark th td {
+    font-weight: 600;
+    border: 1px solid black;
+    background-color: none;
+  }
+  .thead-dark th{
+    text-align: left;
+    padding: 0% 0% 0% 0.5%;
+  }
+  .thead-dark th:nth-child(1){
+    text-align: center;
+    padding: 0;
+  }
+  .service-section .text_permission table .thead-dark th td tr {
+    color: var(--black1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .service-section .text_permission table .thead-dark th td tr:last-child {
+    border-bottom: none;
+  }
+  .service-section .text_permission table  tbody .thead-dark th td tr:hover {
+    background: var(--blue);
+    color: var(--white);
+    
+  }
+  .service-section .text_permission table .thead-dark th td tr th {
+    padding: 10px;
+  }
+  .service-section .text_permission table .thead-dark th td tr th:last-child {
+    text-align: end;
+  }
+  .service-section .text_permission table .thead-dark th td tr th:nth-child(2) {
+    text-align: end;
+  }
+  .service-section .text_permission table .thead-dark th td tr th:nth-child(3) {
+    text-align: center;
+  }
+  
+  
+  
+  
+  .custom-btn_btn-approve {
+    padding: 2px 4px;
+    background: #77DD77;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    border-width : 0;
+  }
+  .custom-btn_btn-cancel {
+    padding: 2px 4px;
+    background: #f00;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    border-width : 0;
+  }
+  .custom-btn_btn-finished {
+    padding: 2px 4px;
+    background: #1795ce;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    border-width : 0;
+  }
+  .custom-btn_btn-view{
+    padding: 2px 4px;
+    background: #e9b10a;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    border-width : 0;
+  }
+  
+  
+  .table {
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    padding: 20px;
+    background: var(--white);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+  }
+  .table .imgBx {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+  .table .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .table table tr td {
+    padding: 12px 10px;
+  }
+  .table table tr td h4 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2rem;
+  }
+  .table table tr td h4 span {
+    font-size: 14px;
+    color: var(--black2);
+  }
+  .table table tr:hover {
+    background: var(--blue);
+    color: var(--white);
+  }
+  .table table tr:hover td h4 span {
+    color: var(--white);
+  }
+  
+  /* ====================== RECENT RESERVATION ========================== */
+  .text_permission {
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    padding: 20px;
+    background: var(--white);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+  }
+  .text_permission .imgBx {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+  .text_permission .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .text_permission table tr td {
+    padding: 12px 10px;
+  }
+  .text_permission table tr td h4 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2rem;
+  }
+  .text_permission table tr td h4 span {
+    font-size: 14px;
+    color: var(--black2);
+  }
+  .text_permission table tr:hover {
+    background: var(--blue);
+    color: var(--white);
+  }
+  .text_permission table tr:hover td h4 span {  
+    color: var(--white);
+  }
+  
+  /* ====================== Responsive Design ========================== */
+  @media (max-width: 991px) {
+    .navigation {
+      left: -300px;
+    }
+    .navigation.active {
+      width: 300px;
+      left: 0;
+    } 
+    .main {
+      width: 100%;
+      left: 0;
+    }
+    .main.active {
+      left: 250px;
+    }
+    .cardBox {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .service-section {
+      grid-template-columns: 1fr;
+    }
+    .recentOrders {
+      overflow-x: auto;
+    }
+    .status.inProgress {
+      white-space: nowrap;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cardBox {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .container-fluid h2 {
+      font-size: 20px;
+    }
+    .user {
+      min-width: 40px;
+    }
+    .navigation {
+      width: 100%;
+      left: -100%;
+      z-index: 1000;
+    }
+    .navigation.active {
+      width: 100%;
+      left: 0;
+    }
+    .toggle {
+      z-index: 10001;
+    }
+    .main.active .toggle {
+      color: #fff;
+      position: fixed;
+      right: 20;
+      left: initial;
+    }
+  }
+  
+  .page-item{
+    display: inline-block;
+  }
+  
+  .page-item a {
+    color: rgb(18, 54, 173);
+    float: right;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  .page-item a.active {
+    background-color: #1a7a92;
+    color: white;
+    border-radius: 5px;
+  
+  }
+  .page-item{
+    display: inline-block;
+  }
+  
+  .page-item a {
+    color: rgb(18, 54, 173);
+    float: right;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  .page-item a.active {
+    background-color: #1a7a92;
+    color: white;
+    border-radius: 5px;
+  
+  }
+  
+  /* <!-- ========================= PAGENATION ==================== --> */ 
+  
+  ul .pagination {
+    display: inline-block;
+    color:#1795ce;
+    
+  }
+  
+  ul .pagination li {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  ul .pagination li.active {
+    background-color: #1a7a92;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  ul .pagination li:hover:not(.active) {
+    background-color: none;
+    border-radius: 5px;
+  }
+
+
+
+
