@@ -1,11 +1,11 @@
 .card-body{
-
+  color: rgb(0, 0, 0);
 }
 .form-control{
-    color:aquamarine;
+    color:rgb(0, 0, 0);
 }
 .card-header{
-    background-color: aqua;
+    background-color: none;
 }
 
 .container .card-header {
@@ -26,3 +26,358 @@
   }
   
   
+
+  
+
+
+
+
+/* ================== Reservation List ============== */
+.service-section {
+  position: relative;
+  width: 100%;
+  padding: 50px;
+  display: grid;
+  margin: auto;
+}
+.service-section .text_permission {
+  position: relative;
+  display: grid;
+  min-height: 500px;
+  background: var(--white);
+  padding: 20px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+}
+.containernimama {
+  display: flex;
+}
+
+.containernimama .card-header .card-body{
+  display: flex;
+
+  /* padding-left:10%; */
+  /* margin-right: 100px; */
+
+}
+
+.container-fluid h2 {
+  font-weight: 600;
+  color: var(--blue);
+  margin-bottom: 5%;
+}
+.container-fluid h2 {
+  font-weight: 600;
+  color: var(--blue);
+  margin-bottom: 5%;
+}
+.container-fluid h3 {
+  font-weight: 600;
+  color: var(--blue);
+  margin-bottom: 5%;
+  position:relative;
+}
+.container-fluid .btn-viewall {
+  position: relative;
+  padding: 5px 10px;
+  background: var(--blue);
+  text-decoration: none;
+  color: var(--white);
+  border-radius: 6px;
+}
+
+
+.service-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.custom-btn_btn-approve {
+  padding: 2px 4px;
+  background: #77DD77;
+  color: var(--white);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  border-width : 0;
+}
+ .custom-btn_btn-cancel {
+  padding: 2px 4px;
+  background: #f00;
+  color: var(--white);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  border-width : 0;
+}
+.custom-btn_btn-finished {
+  padding: 2px 4px;
+  background: #1795ce;
+  color: var(--white);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  border-width : 0;
+}
+.custom-btn_btn-view {
+  padding: 2px 4px;
+  background: #e9b10a;
+  color: var(--white);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  border-width : 0;
+}
+.custom-btn_btn-view:hover, 
+.custom-btn_btn-finished:hover, 
+.custom-btn_btn-cancel:hover,
+.custom-btn_btn-approve:hover
+{
+  cursor: pointer;
+}
+
+
+/* .table {
+  position: relative;
+  display: grid;
+  min-height: 500px;
+  padding: 20px;
+  background: var(--white);
+  box-shadow: 0 7px 25px rgba(94, 81, 81, 0.623);
+  border-radius: 20px;
+} */
+/* .table .imgBx {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.table .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.table table tr td {
+  padding: 12px 10px;
+}
+.table table tr td h4 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2rem;
+}
+.table table tr td h4 span {
+  font-size: 14px;
+  color: var(--black2);
+}
+.table table tr:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+.table table tr:hover td h4 span {
+  color: var(--white);
+} */
+.lamesa th{
+
+  text-align: left;
+}
+.lamesa tr th:hover{
+  background-color: none; 
+}
+
+.lamesa tr:hover{
+  background-color: none !important;
+}
+.lamesa th:nth-child(6){
+  text-align: center;
+}
+.lamesa tbody tr td:nth-child(6){
+    /* text-align: left; */
+    text-align: center;
+}
+
+/* ====================== RECENT RESERVATION ========================== */
+.text_permission {
+  position: relative;
+  display: grid;
+  min-height: 500px;
+  padding: 20px;
+  background: var(--white);
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+}
+
+.text_permission .imgBx {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.text_permission .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.text_permission table tr td {
+  padding: 12px 10px;
+}
+.text_permission table tr td h4 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2rem;
+}
+.text_permission table tr td h4 span {
+  font-size: 14px;
+  color: var(--black2);
+}
+.text_permission table tr:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+.text_permission table tr:hover td h4 span {  
+  color: var(--white);
+}
+
+
+
+/* ====================== Responsive Design ========================== */
+@media (max-width: 991px) {
+  .navigation {
+    left: -300px;
+  }
+  .navigation.active {
+    width: 300px;
+    left: 0;
+  } 
+  .main {
+    width: 100%;
+    left: 0;
+  }
+  .main.active {
+    left: 250px;
+  }
+  .cardBox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .service-section {
+    grid-template-columns: 1fr;
+  }
+  .recentOrders {
+    overflow-x: auto;
+  }
+  .status.inProgress {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardBox {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container-fluid h2 {
+
+    font-size: 20px;
+  }
+  .user {
+    min-width: 40px;
+  }
+  .navigation {
+    width: 100%;
+    left: -100%;
+    z-index: 1000;
+  }
+  .navigation.active {
+    width: 100%;
+    left: 0;
+  }
+  .toggle {
+    z-index: 10001;
+  }
+  .main.active .toggle {
+    color: #fff;
+    position: fixed;
+    right: 20;
+    left: initial;
+  }
+}
+
+.page-item{
+  display: inline-block;
+}
+
+.page-item a {
+  color: rgb(18, 54, 173);
+  float: right;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.page-item a.active {
+  background-color: #1a7a92;
+  color: white;
+  border-radius: 5px;
+
+}
+.page-item{
+  display: inline-block;
+}
+
+.page-item a {
+  color: rgb(18, 54, 173);
+  float: right;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.page-item a.active {
+  background-color: #1a7a92;
+  color: white;
+  border-radius: 5px;
+
+}
+
+
+.input-field{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0 10px 0 10px;
+}
+.input{
+  height: 45px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  outline: none;
+  margin-bottom: 20px;
+  color: #40414a;
+}
+.input-box .input-field label{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  pointer-events: none;
+  transition: .5s;
+}
+.input-field .input:focus ~ label{
+  top: -10px;
+  font-size: 13px;
+}
+.input-field .input:valid ~ label{
+  top: -10px;
+  font-size: 13px;
+  color: #5d5076;
+}
+.input-field .input:focus, .input-field .input:valid{
+  border-bottom: 1px solid #743ae1;
+}

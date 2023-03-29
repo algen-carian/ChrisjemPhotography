@@ -41,36 +41,9 @@
                         <span class="icon">
                             <ion-icon name="home-outline"></ion-icon>
                         </span>
-                        <span class="title">Dashboard</span>
+                        <span class="title">Back</span>
                     </a>
                 </li>
-                <li>
-                    <a href="Reservation">
-                        <span class="icon">
-                            <ion-icon name="clipboard-outline"></ion-icon>
-                        </span>
-                        <span class="title">Reservation</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="adminevent">
-                        <span class="icon">
-                            <ion-icon name="calendar-outline"></ion-icon>
-                        </span>
-                        <span class="title">Event</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="adminhistory">
-                        <span class="icon">
-                            <ion-icon name="settings-outline"></ion-icon>
-                        </span>
-                        <span class="title">History</span>
-                    </a>
-                </li>
-
                 <li>
                     <a href="/">
                         <span class="icon">
@@ -83,90 +56,104 @@
               
             </ul>
         </div>
-        
-   <!-- ========================= Main ==================== -->
-  <div class="main">
+    <!-- ========================= Main ==================== -->
+    <div class="main">
+       
+       <!-- SEARCH -->
+       <div class="topbar">
+           <div class="toggle">
+               <ion-icon name="menu-outline"></ion-icon> 
+           </div>
 
-<div class="topbar">
-        <div class="toggle">
-            <ion-icon name="menu-outline"></ion-icon>
-        </div>
-
-        <div class="search">
-            <label>
-                <input type="text" placeholder="Search here">
-            </label>
-        </div>
-
-        <div class="user">
-            <img src="../assets/style-lp/images/picxellence.png" alt="">
-        </div>
-    </div>
+           <div class="search">
+               <label>
+                   <input type="text" placeholder="Search here">
+                  
+               </label>
+           </div>
 
 
+           <div class="user">
+                    <img src="../assets/style-lp/images/picxellence.png"alt="">
+           </div>
+       </div>
+    
 
- 
-        <section class="service-section" style="padding-left:10%;padding-top:5%;">
+
+        <!-- Container Card -->
+        <section class="service-section">
           <div class="text_permission">
+
+
             <div class="container-fluid" >
                 <h2>Reservations</h2>
-               
-                    <div class="card" style="width: 60%;float:left;padding-bottom:2%;">
-                        <div class="card-header">
-                           <h3> Details</h3>
-                        </div>
-                        <div class="card-body">
-                            @foreach($Events as $ev)
-                            <div>
-                                <label for="Name">Name</label>
-                                <input  class="form-control" name="Name" type="text" value="{{$ev->fname}} {{$ev->mname}} {{$ev->lname}}" readonly>
-                            </div>
-                            <div>
-                                <label for="Email">Email</label>
-                                <input  class="form-control" name="Email" type="text" value="{{$ev->email}}" readonly>
-                            </div>
-                            <div>
-                                <label for="Location">Location of Event</label>
-                                <input  class="form-control" name="Location" type="text" value="{{$ev->Address}}" readonly>
-                            </div>
-                            <div>
-                                <label for="Contact">Contact</label>
-                                <input  class="form-control" name="Contact" type="text" value="{{$ev->contact}}" readonly>
-                            </div>
-                            <div>
-                                <label for="Alternate">Alternate Contact</label>
-                                <input  class="form-control" name="Alternate"type="text" value="{{$ev->alternate}}" readonly>
-                            </div>
-                            <div>
-                                <label for="status">Status</label>
-                                <input class="form-control"  name="status" type="text" value="{{$ev->event_status}}" readonly>
-                            </div>
-                            <div>
-                                <label for="data_event">Event Date</label>
-                                <input class="form-control"  name="data_event" type="text" value="{{$ev->Event_date}}" readonly>
-                            </div>
-                            <div>
-                                <label for="DoR">Date of Reservation</label>
-                                <input  class="form-control" name="DoR" type="text" value="{{$ev->created_at}}" readonly>
-                            </div>
-                             @endforeach   	
-                                	
-                        </div>
-                    </div>
+       
 
-                    <div class="card" style="width: 30%;float:left;margin-left:1%;">
-                        <div class="card-header">
-                           <h3>Services</h3>
+                <div class="containernimama">
+             <div class="card">
+                          <div class="card-header">
+                             <h3> Details</h3>
+                          </div>
+                          <div class="input-field">
+                              @foreach($Events as $ev)
+
+                              <div class="input-field">
+                            <label for="email">Name</label>
+                            <input  class="form-control" name="Name" type="text" value="{{$ev->fname}} {{$ev->mname}} {{$ev->lname}}" readonly>
                         </div>
-                        <div class="card-body">
-                            <div>
-                                <label for="DoR">Type of services:</label>
-                                @foreach($services as $serv)
-                                    <input  class="form-control" name="service" type="text" value="{{$serv->Service}}" readonly>
-                                    <br>
-                                @endforeach
-                            </div>
-                        </div>
+
+
+                              <div>
+                                  <label for="Name">Name</label>
+                                  <input  class="form-control" name="Name" type="text" value="{{$ev->fname}} {{$ev->mname}} {{$ev->lname}}" readonly>
+                              </div>
+                              <div>
+                                  <label for="Email">Email</label>
+                                  <input  class="form-control" name="Email" type="text" value="{{$ev->email}}" readonly>
+                              </div>
+                              <div>
+                                  <label for="Location">Location of Event</label>
+                                  <input  class="form-control" name="Location" type="text" value="{{$ev->Address}}" readonly>
+                              </div>
+                              <div>
+                                  <label for="Contact">Contact</label>
+                                  <input  class="form-control" name="Contact" type="text" value="{{$ev->contact}}" readonly>
+                              </div>
+                              <div>
+                                  <label for="Alternate">Alternate Contact</label>
+                                  <input  class="form-control" name="Alternate"type="text" value="{{$ev->alternate}}" readonly>
+                              </div>
+                              <div>
+                                  <label for="status">Status</label>
+                                  <input class="form-control"  name="status" type="text" value="{{$ev->event_status}}" readonly>
+                              </div>
+                              <div>
+                                  <label for="data_event">Event Date</label>
+                                  <input class="form-control"  name="data_event" type="text" value="{{$ev->Event_date}}" readonly>
+                              </div>
+                              <div>
+                                  <label for="DoR">Date of Reservation</label>
+                                  <input  class="form-control" name="DoR" type="text" value="{{$ev->created_at}}" readonly>
+                              </div>
+                               @endforeach   	
+                                    
+                          </div>
+                      </div>
+            
+                      <div class="card">
+                          <div class="card-header">
+                             <h3>Services</h3>
+                          </div>
+                          <div class="input-field">
+                              <div>
+                                  <label for="DoR">Type of services:</label>
+                                  @foreach($services as $serv)
+                                      <input  class="form-control" name="service" type="text" value="{{$serv->Service}}" readonly>
+                                      <br>
+                                  @endforeach
+                              </div>
+                          </div>
+                      </div>                    
                     </div>
                 </div>        
             </div>
