@@ -94,45 +94,45 @@
                           <div class="card-header">
                              <h3> Details</h3>
                           </div>
-                          <div class="input-field">
+                          <div class="card-body">
                               @foreach($Events as $ev)
 
-                              <div class="input-field">
+                              <!-- <div class="input-field">
                             <label for="email">Name</label>
                             <input  class="form-control" name="Name" type="text" value="{{$ev->fname}} {{$ev->mname}} {{$ev->lname}}" readonly>
-                        </div>
+                        </div> -->
 
 
                               <div>
-                                  <label for="Name">Name</label>
+                                  <label for="Name">Name:</label>
                                   <input  class="form-control" name="Name" type="text" value="{{$ev->fname}} {{$ev->mname}} {{$ev->lname}}" readonly>
                               </div>
                               <div>
-                                  <label for="Email">Email</label>
+                                  <label for="Email">Email:</label>
                                   <input  class="form-control" name="Email" type="text" value="{{$ev->email}}" readonly>
                               </div>
                               <div>
-                                  <label for="Location">Location of Event</label>
+                                  <label for="Location">Location of Event:</label>
                                   <input  class="form-control" name="Location" type="text" value="{{$ev->Address}}" readonly>
                               </div>
                               <div>
-                                  <label for="Contact">Contact</label>
+                                  <label for="Contact">Contact:</label>
                                   <input  class="form-control" name="Contact" type="text" value="{{$ev->contact}}" readonly>
                               </div>
                               <div>
-                                  <label for="Alternate">Alternate Contact</label>
+                                  <label for="Alternate">Alternate Contact:</label>
                                   <input  class="form-control" name="Alternate"type="text" value="{{$ev->alternate}}" readonly>
                               </div>
                               <div>
-                                  <label for="status">Status</label>
+                                  <label for="status">Status:</label>
                                   <input class="form-control"  name="status" type="text" value="{{$ev->event_status}}" readonly>
                               </div>
                               <div>
-                                  <label for="data_event">Event Date</label>
+                                  <label for="data_event">Event Date:</label>
                                   <input class="form-control"  name="data_event" type="text" value="{{$ev->Event_date}}" readonly>
                               </div>
                               <div>
-                                  <label for="DoR">Date of Reservation</label>
+                                  <label for="DoR">Date of Reservation:</label>
                                   <input  class="form-control" name="DoR" type="text" value="{{$ev->created_at}}" readonly>
                               </div>
                                @endforeach   	
@@ -144,7 +144,7 @@
                           <div class="card-header">
                              <h3>Services</h3>
                           </div>
-                          <div class="input-field">
+                          <div class="card-body">
                               <div>
                                   <label for="DoR">Type of services:</label>
                                   @foreach($services as $serv)
@@ -165,7 +165,7 @@
 
 <script>
     // alert("Welcome Admin")
-let sidebar = document.querySelector(".sidebar");
+let sidemenu = document.querySelector(".sidemenu");
 let closeBtn = document.querySelector("#btn");
 let searchBtn = document.querySelector(".bx-search");
  

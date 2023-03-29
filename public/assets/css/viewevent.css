@@ -346,38 +346,39 @@
 }
 
 
-.input-field{
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  padding: 0 10px 0 10px;
+.card-body{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px 0 10px;
+    color:#000000;
 }
 .input{
-  height: 45px;
-  width: 100%;
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid rgba(0,0,0,0.2);
-  outline: none;
-  margin-bottom: 20px;
-  color: #40414a;
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    outline: none;
+    margin-bottom: 20px;
+    color: #40414a;
 }
-.input-box .input-field label{
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  pointer-events: none;
-  transition: .5s;
+.form-control .card-body label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: .5s;
 }
-.input-field .input:focus ~ label{
-  top: -10px;
-  font-size: 13px;
+.card-body .input:focus ~ label{
+    top: -10px;
+    font-size: 13px;
 }
-.input-field .input:valid ~ label{
-  top: -10px;
-  font-size: 13px;
-  color: #5d5076;
+.card-body.input:valid ~ label{
+    top: -10px;
+    font-size: 13px;
+    color: #5d5076;
 }
-.input-field .input:focus, .input-field .input:valid{
-  border-bottom: 1px solid #743ae1;
+.card-body .input:focus, .card-body .input:valid{
+    border-bottom: 1px solid #743ae1;
 }
