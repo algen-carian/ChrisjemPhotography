@@ -1,9 +1,50 @@
 .card-body{
   color: rgb(0, 0, 0);
+  /* background-color: rgba(3, 3, 3, 0.438);
+  border-radius: 15px; */
 }
 .form-control{
-    color:rgb(0, 0, 0);
+  height: 45px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  outline: none;
+  margin-bottom: 20px;
+  color: #40414a;
 }
+
+.card{
+  /* background-color: pink;
+  border-radius: 50px; */
+}
+.input-field{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0 10px 0 10px;
+}
+
+.input-field label{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  pointer-events: none;
+  transition: .5s;
+}
+.input-field .input:focus ~ label{
+  top: -10px;
+  font-size: 13px;
+}
+.input-field .input:valid ~ label{
+  top: -10px;
+  font-size: 13px;
+  color: #5d5076;
+}
+.input-field .input:focus, .input-field .input:valid{
+  border-bottom: 1px solid #743ae1;
+}
+
 .card-header{
     background-color: none;
 }
@@ -51,6 +92,8 @@
 }
 .containernimama {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10rem;
 }
 
 .containernimama .card-header .card-body{
@@ -61,10 +104,8 @@
 
 }
 
-.container-fluid h2 {
-  font-weight: 600;
-  color: var(--blue);
-  margin-bottom: 5%;
+.text_permission.card{
+  color: #77DD77;
 }
 .container-fluid h2 {
   font-weight: 600;
@@ -138,49 +179,7 @@
 }
 
 
-/* .table {
-  position: relative;
-  display: grid;
-  min-height: 500px;
-  padding: 20px;
-  background: var(--white);
-  box-shadow: 0 7px 25px rgba(94, 81, 81, 0.623);
-  border-radius: 20px;
-} */
-/* .table .imgBx {
-  position: relative;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  overflow: hidden;
-}
-.table .imgBx img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.table table tr td {
-  padding: 12px 10px;
-}
-.table table tr td h4 {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.2rem;
-}
-.table table tr td h4 span {
-  font-size: 14px;
-  color: var(--black2);
-}
-.table table tr:hover {
-  background: var(--blue);
-  color: var(--white);
-}
-.table table tr:hover td h4 span {
-  color: var(--white);
-} */
+
 .lamesa th{
 
   text-align: left;

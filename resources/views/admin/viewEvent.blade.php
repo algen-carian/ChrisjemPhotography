@@ -39,11 +39,17 @@
                 <li>
                     <a href="adminAuth">
                         <span class="icon">
-                            <ion-icon name="home-outline"></ion-icon>
+                        <ion-icon name="arrow-back-outline"></ion-icon>
                         </span>
-                        <span class="title">Back</span>
+                        <span onclick="history.back()" class="title">Back</span>
                     </a>
                 </li>
+
+               
+ <input type="button" value="Go back!" onclick="history.back()">
+
+
+
                 <li>
                     <a href="/">
                         <span class="icon">
@@ -67,8 +73,8 @@
 
            <div class="search">
                <label>
+               <ion-icon name="search-outline"></ion-icon>
                    <input type="text" placeholder="Search here">
-                  
                </label>
            </div>
 
@@ -103,37 +109,42 @@
                         </div> -->
 
 
-                              <div>
-                                  <label for="Name">Name:</label>
-                                  <input  class="form-control" name="Name" type="text" value="{{$ev->fname}} {{$ev->mname}} {{$ev->lname}}" readonly>
+                              <div class="input-field">
+                                  <input  class="form-control" name="Name" type="text" value="" readonly>
+                                  <label for="Name">Name: {{$ev->fname}} {{$ev->mname}} {{$ev->lname}}</label>
                               </div>
-                              <div>
-                                  <label for="Email">Email:</label>
-                                  <input  class="form-control" name="Email" type="text" value="{{$ev->email}}" readonly>
+                              <div class="input-field">
+                                  <input  class="form-control" name="Email" type="text" value="" readonly>
+                                  <label for="Email">Email: {{$ev->email}}</label>
                               </div>
-                              <div>
-                                  <label for="Location">Location of Event:</label>
-                                  <input  class="form-control" name="Location" type="text" value="{{$ev->Address}}" readonly>
+                              <div class="input-field">
+                                  <input  class="form-control" name="Location" type="text" value="" readonly>
+                                  <label for="Location">Location of Event: {{$ev->Address}}</label>
                               </div>
-                              <div>
-                                  <label for="Contact">Contact:</label>
-                                  <input  class="form-control" name="Contact" type="text" value="{{$ev->contact}}" readonly>
+                              <div class="input-field">
+                                  
+                                  <input  class="form-control" name="Contact" type="text" value="" readonly>
+                                  <label for="Contact">Contact: {{$ev->contact}}</label>
                               </div>
-                              <div>
-                                  <label for="Alternate">Alternate Contact:</label>
-                                  <input  class="form-control" name="Alternate"type="text" value="{{$ev->alternate}}" readonly>
+                              <div class="input-field">
+                                  
+                                  <input  class="form-control" name="Alternate"type="text" value="" readonly>
+                                  <label for="Alternate">Alternate Contact: {{$ev->alternate}}</label>
                               </div>
-                              <div>
-                                  <label for="status">Status:</label>
-                                  <input class="form-control"  name="status" type="text" value="{{$ev->event_status}}" readonly>
+                              <div class="input-field">
+                                 
+                                  <input class="form-control"  name="status" type="text" value="" readonly>
+                                  <label for="status">Status: {{$ev->event_status}}</label>
                               </div>
-                              <div>
-                                  <label for="data_event">Event Date:</label>
-                                  <input class="form-control"  name="data_event" type="text" value="{{$ev->Event_date}}" readonly>
+                              <div class="input-field">
+                                 
+                                  <input class="form-control"  name="data_event" type="text" value="" readonly>
+                                  <label for="data_event">Event Date: {{$ev->Event_date}}</label>
                               </div>
-                              <div>
-                                  <label for="DoR">Date of Reservation:</label>
-                                  <input  class="form-control" name="DoR" type="text" value="{{$ev->created_at}}" readonly>
+                              <div class="input-field">
+        
+                                  <input  class="form-control" name="DoR" type="text" value="" readonly>
+                                  <label for="DoR">Date of Reservation: {{$ev->created_at}}</label>
                               </div>
                                @endforeach   	
                                     
@@ -189,5 +200,7 @@ function menuBtnChange() {
  }
 }
 </script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </html>
