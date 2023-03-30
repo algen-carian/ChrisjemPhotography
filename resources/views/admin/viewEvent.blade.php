@@ -186,7 +186,7 @@ closeBtn.addEventListener("click", ()=>{
   menuBtnChange();//calling the function(optional)
 });
  
-searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search icon
   sidebar.classList.toggle("open");
   menuBtnChange(); //calling the function(optional)
 });
