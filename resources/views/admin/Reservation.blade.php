@@ -106,7 +106,7 @@
 
 
                 <div class="user">
-                         <img src="../assets/style-lp/images/picxellence.png"alt="">
+                         <img src="../assets/style-lp/images/icon1.jpg"alt="">
                 </div>
             </div>
          
