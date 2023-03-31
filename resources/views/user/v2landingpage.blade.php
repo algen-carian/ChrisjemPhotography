@@ -409,8 +409,6 @@
             });
             console.log(disabledDates);
          };
-
-
         $(function() {
 
          var currentDate = new Date();
