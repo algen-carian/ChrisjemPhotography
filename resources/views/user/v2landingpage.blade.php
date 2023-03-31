@@ -17,8 +17,8 @@
     </head>
 	
     <body id="page-top">
-<!-- 
-    @if (session('Success'))
+
+    <!-- @if (session('Success'))
          <div class="alert alert-success" role="alert" >
             {{ session('Success') }}
          </div>
@@ -76,6 +76,9 @@
                         Reserve Now!
                     </a>
                 </div> 
+
+
+
                 
 						
                     </div>
@@ -195,14 +198,16 @@
        
        <div class="video-wrapper">
         <video class="w-100" autoplay loop muted>
-            <source src="assets/intro.mp4" type="video/mp4" />
-          </video>
-       
-        <!-- <div class="header">
+            
+        <source src=" assets/intro.mp4" type="video/mp4" /> 
+        <!-- https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1 -->
+            
+            
+        <div class="header">
           <h1>Picxellence</h1>
           <img src="assets/img/picxellence.png" alt="logo" style="width: 200px;">
         
-        </div>  -->
+        </div> 
       </div>
       
       </section>
@@ -392,7 +397,36 @@
                   </div>
             </div>
         <!-- End of Large Modal -->
-		
+
+
+        
+      <script>
+         let disabledDates = [];
+
+         document.getElementById("reservenow").onclick = function() 
+         {
+            var reserve = {!! json_encode($reservation) !!};  
+            reserve.forEach(element => {
+               disabledDates.push(element.Event_date);
+            });
+            console.log(disabledDates);
+         };
+
+
+        $(function() {
+
+         var currentDate = new Date();
+            $("#datepicker").datepicker({
+               beforeShowDay: function(date) {
+                  let formattedDate = $.datepicker.formatDate("yy-mm-dd", date);
+                  return [disabledDates.indexOf(formattedDate) == -1];
+               }
+            });   
+            
+         });   
+      </script>
+
+
     
        
 		
