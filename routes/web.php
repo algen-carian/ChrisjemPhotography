@@ -14,6 +14,7 @@ use App\Http\Controllers\adminforgotpasswordController;
 use App\Http\Controllers\loginController;
 
 
+
 use App\Http\Controllers\userdashboardController;
 use App\Http\Controllers\userloginController;
 use App\Http\Controllers\signupformController;
@@ -131,7 +132,9 @@ Route::get('/forgotpassword', function () {
 // });
 
 //ADMINLOGIN
-Route::post('/adminAuth',[sidemenuController::class, 'store']);
+Route::get('/adminAuth',[sidemenuController::class, 'store']);
+//ADMINSideMenu
+Route::post('/adminlogin',[sidemenuController::class, 'login'])->name("adminlogin");
 //ADMINDASHBOARD
 Route::get('/admindashboard',[admindashboardController::class, 'index']);
 //ADMINHISTORY
@@ -182,5 +185,5 @@ Route::get('/updateCancel/{id}', [userreservationController::class,'updateCancel
 Route::get('/viewEvent/{id}', [userreservationController::class,'viewEvent'])->name('viewEvent');
 Route::post('/addEvent', [userreservationController::class,'addEvent'])->name('addEvent');
 
-Route::get('#', [landingpageController::class,'index']);
+Route::get('', [landingpageController::class,'index']);
 Route::get('/', [v2landingpageController::class,'index']);

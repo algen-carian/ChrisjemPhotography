@@ -36,17 +36,19 @@
                 </li>
                 <br>
 
+                <!-- <a href="{{ back()->getTargetUrl() }}" class="btn btn-primary">Back</a> -->
+
                 <li>
-                    <a href="adminAuth">
+                    <a href="{{ back()->getTargetUrl() }}">
                         <span class="icon">
                         <ion-icon name="arrow-back-outline"></ion-icon>
                         </span>
-                        <span onclick="history.back()" class="title">Back</span>
+                        <span class="title">Back</span>
                     </a>
                 </li>
 
                
- <input type="button" value="Go back!" onclick="history.back()">
+
 
 
 

@@ -16,8 +16,9 @@ class v2landingpageController extends Controller
         $formattedDate = $currentDate->format('Y-m-d');
 
         $reservation = reservation::select("*")->where("Event_date",">=",$formattedDate)->get();
+        // echo $reservation;
         $Events = event::all();
-       
+    //   echo $Events;
         return view('user.v2landingpage',compact('Events','reservation'));
     }
 

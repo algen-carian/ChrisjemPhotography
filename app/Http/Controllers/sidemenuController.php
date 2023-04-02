@@ -10,6 +10,7 @@ use App\Models\event;
 use App\Models\reservation;
 use DB;
 
+
 class sidemenuController extends Controller
 {
     public function store(){
@@ -26,9 +27,44 @@ class sidemenuController extends Controller
         ->count();
         $Services = event::select('*')->where('event_content','Services')->count();
         $data = [ $Revenue, $Events, $Reservation, $Services];
-        $Services;
+        $Services; 
         return view('admin.sidemenu',compact('data'));
     }
 
-  
+  public function login(Request $request){
+ 
+    $this->validate($request, [
+        'email' => ['required', 'email'],
+        'password' => ['required'],
+    ]);    
+//     $user=User::select("*")->where("")
+// echo $request;
+
+
+$user = User::where('email','=',$request->email)->first();
+        if($user){
+            if(Hash::check($request->password,$user->password)){
+                // return dito ung redirect 
+                return redirect("adminAuth")->with('message', 'Successfuly Logged In'); 
+            }else{
+                // return error dito    
+                return back()->with('status', 'Invalid login password');
+            }
+        }
+        else{
+              // yung email yung mali
+              return back()->with('status', 'Invalid Email');
+        }
+
+
+    // if (Auth::attempt($request->only('email','password'))){
+    //     if(auth()->user()->is_Admin!=1){
+    //         return redirect()->intended('admindashboard')->with('message', 'Successfuly Logged In');     
+    //     }else{
+    //         return back()->with('status', 'Invalid login details');
+    //     }
+    // }
+    // return back()->with('status', 'Invalid login details');
+
+  }
 }

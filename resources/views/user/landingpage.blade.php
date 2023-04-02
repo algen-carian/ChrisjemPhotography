@@ -41,10 +41,9 @@
       <link rel="stylesheet" href="../assets/style-lp/css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
       
-      <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-        
+      <!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">     
       <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script> -->
    </head>
    <body>
   
@@ -467,6 +466,7 @@
             var reserve = {!! json_encode($reservation) !!};
 
            
+            console.log(reserve);
             reserve.forEach(element => {
                disabledDates.push(element.Event_date);
             });

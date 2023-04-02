@@ -37,25 +37,25 @@
                 <div class="col-md-6 right">
                      <div class="input-box">
                         <header>Login Account</header>
-                        <form  method="post" action="/adminAuth">
+                        <form  method="post" action="{{url('/adminlogin')}}">
                              @csrf
 
-                        <div class="input-field">
-                            <input type="text" class="input" id="email" required autocomplete="off">
-                            <label for="email">Email</label>
-                        </div>
-                        <div class="input-field">
-                            <input type="password" class="input" id="password" required>
-                            <label for="password">Password</label>
-                        </div>
-                        <div class="input-field">
+                                        <div class="input-field">
+                                            <input type="text" class="input" name="email" id="email" required autocomplete="off">
+                                            <label for="email">Email</label>
+                                        </div>
+                                        <div class="input-field">
+                                            <input type="password" class="input" name="password" id="password" required>
+                                            <label for="password">Password</label>
+                                        </div>
+                                        <div class="input-field">
 
-                            <input name="submit"  id="login" type="submit" class="submit" value="Sign in">
-                        </div>
-                        </form>   
-                        <div class="signin">
-                            <span>Forgot Password? <a href="forgotpassword">Click here</a></span>
-                        </div>
+                                            <input name="submit"  id="login" type="submit" class="submit" value="Sign in">
+                                        </div>
+                            </form>   
+                            <div class="signin">
+                                <span>Forgot Password? <a href="forgotpassword">Click here</a></span>
+                            </div>
                      </div>
                 </div>
             </div>

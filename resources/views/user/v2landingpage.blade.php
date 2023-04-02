@@ -14,6 +14,23 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link rel="stylesheet" href="../assets/css/v2landingpage.css">
+      
+       
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">     
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script> 
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- Include jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Include Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- bootstrap css -->
+  <link rel="stylesheet" type="text/css" href="../assets/style-lp/css/bootstrap.min.css">
+  
+      
+
+
     </head>
 	
     <body id="page-top">
@@ -72,9 +89,9 @@
 						
 						
 						<div class="read_bt">
-                    <a class="btn btn-primary" href=" " data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" id="reservenow">
+                    <button class="btn btn-primary"  data-toggle="modal" data-target="#myModal" data-whatever="@mdo" id="reservenow">
                         Reserve Now!
-                    </a>
+                    </button>
                 </div> 
 
                 
@@ -196,19 +213,12 @@
        
        <div class="video-wrapper">
         <video class="w-100" autoplay loop muted>
-            
-        <source src=" assets/intro.mp4" type="video/mp4" /> 
-        <!-- https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1 -->
-            
-            
-        <div class="header">
-          <h1>Picxellence</h1>
-          <img src="assets/img/picxellence.png" alt="logo" style="width: 200px;">
-        
-        </div> 
+
+            <source src="assets/" type="video/mp4" />
+          </video>
       </div>
       
-      </section>
+      </section>    
       <!--Bidyo Ends Here-->
   
 
@@ -301,7 +311,7 @@
 		
 		
 		  <!-- Large modal -->
-            <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade bd-example-modal-lg"  id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                <div class="modal-dialog modal-lg" role="document">
                      <div class="modal-content">
                             <div class="modal-header">
@@ -395,9 +405,28 @@
                   </div>
             </div>
         <!-- End of Large Modal -->
+<!-- Javascript files-->
+<script src="../assets/style-lp/js/jquery.min.js"></script>
+      <script src="../assets/style-lp/js/popper.min.js"></script>
+      <script src="../assets/style-lp/js/bootstrap.bundle.min.js"></script>
+      <script src="../assets/style-lp/js/jquery-3.0.0.min.js"></script>
+      <script src="../assets/style-lp/js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="../assets/style-lp/js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="../assets/style-lp/js/custom.js"></script>
+      <!-- javascript --> 
+      <script src="../assets/style-lp/js/owl.carousel.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>      
 
 
         
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
       <script>
          let disabledDates = [];
 
@@ -409,13 +438,19 @@
             });
             console.log(disabledDates);
          };
+
+
         $(function() {
 
          var currentDate = new Date();
             $("#datepicker").datepicker({
+                
                beforeShowDay: function(date) {
+                if(currentDate==date){
+
+                }
                   let formattedDate = $.datepicker.formatDate("yy-mm-dd", date);
-                  return [disabledDates.indexOf(formattedDate) == -1];
+                  return [disabledDates.indexOf(formattedDate) == -1 && date >= currentDate];
                }
             });   
             
@@ -427,12 +462,5 @@
        
 		
 		
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <!-- <script src="js/scripts.js"></script> -->
-        <script src="assets/js/scripts.js"></script>
-   
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
