@@ -3078,87 +3078,86 @@ textarea.form-control-lg {
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #558985;
-  border-color: #50817e;
+  background-color: #1795ce;
+  border-color:  #1795ce;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
-  background-color: #558985;
-  border-color: #50817e;
+  background-color: #1a7a92;
+  border-color: #1795ce;
   box-shadow: 0 0 0 0.25rem rgba(123, 175, 172, 0.5);
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #50817e;
-  border-color: #4b7976;
+  background-color:  #1795ce;
+  border-color: #1795ce;
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.25rem rgba(123, 175, 172, 0.5);
 }
 .btn-primary:disabled, .btn-primary.disabled {
   color: #fff;
-  background-color: #64a19d;
-  border-color: #64a19d;
+  background-color:  #1795ce;
+  border-color:  #1795ce;
 }
 
 .btn-secondary {
   color: #fff;
-  background-color: #7464a1;
-  border-color: #7464a1;
+  background-color: #30d6c8;
+  border-color:red;
 }
 .btn-secondary:hover {
-  color: #fff;
-  background-color: #635589;
-  border-color: #5d5081;
+  background-color:  #1fcac2;
+  border-color: #000000;
 }
 .btn-check:focus + .btn-secondary, .btn-secondary:focus {
   color: #fff;
-  background-color: #635589;
-  border-color: #5d5081;
-  box-shadow: 0 0 0 0.25rem rgba(137, 123, 175, 0.5);
+  background-color: #30d6c8;
+  border-color: #30d6c8;
+  box-shadow: 0 0 0 0.25rem rgba(7, 226, 208, 0.5);
 }
 .btn-check:checked + .btn-secondary, .btn-check:active + .btn-secondary, .btn-secondary:active, .btn-secondary.active, .show > .btn-secondary.dropdown-toggle {
   color: #fff;
-  background-color: #5d5081;
-  border-color: #574b79;
+  background-color: #30d6c8;
+  border-color: #30d6c8;
 }
 .btn-check:checked + .btn-secondary:focus, .btn-check:active + .btn-secondary:focus, .btn-secondary:active:focus, .btn-secondary.active:focus, .show > .btn-secondary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(137, 123, 175, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(7, 226, 208, 0.5);
 }
 .btn-secondary:disabled, .btn-secondary.disabled {
   color: #fff;
-  background-color: #7464a1;
-  border-color: #7464a1;
+  background-color: #30d6c8;
+  border-color: #30d6c8;
 }
 
 .btn-success {
   color: #000;
-  background-color: #67c29c;
-  border-color: #67c29c;
+  background-color:  #1795ce;
+  border-color: #1795ce;
 }
 .btn-success:hover {
   color: #000;
-  background-color: #7ecbab;
-  border-color: #76c8a6;
+  background-color: #1795ce;
+  border-color:  #1795ce;
 }
 .btn-check:focus + .btn-success, .btn-success:focus {
   color: #000;
-  background-color: #7ecbab;
-  border-color: #76c8a6;
+  background-color:  #1795ce;
+  border-color:  #1795ce;
   box-shadow: 0 0 0 0.25rem rgba(88, 165, 133, 0.5);
 }
 .btn-check:checked + .btn-success, .btn-check:active + .btn-success, .btn-success:active, .btn-success.active, .show > .btn-success.dropdown-toggle {
   color: #000;
-  background-color: #85ceb0;
-  border-color: #76c8a6;
+  background-color:  #1795ce;
+  border-color:  #1795ce;
 }
 .btn-check:checked + .btn-success:focus, .btn-check:active + .btn-success:focus, .btn-success:active:focus, .btn-success.active:focus, .show > .btn-success.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.25rem rgba(88, 165, 133, 0.5);
 }
 .btn-success:disabled, .btn-success.disabled {
   color: #000;
-  background-color: #67c29c;
-  border-color: #67c29c;
+  background-color: #1795ce;
+  border-color:  #1795ce;
 }
 
 .btn-info {
@@ -11609,7 +11608,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url(/assets/img/landing.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url(/assets/smoke.avif);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11749,6 +11748,10 @@ body {
 
 .footer-button:hover{
   color:green;
+
+}
+.btn-primary:hover{
+  background-color:green;
 
 
 }

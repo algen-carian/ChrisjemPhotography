@@ -47,12 +47,12 @@
                                         <div class="input-field">
                                             <input type="password" class="input" name="password" id="password" required>
                                             <label for="password">Password</label>
-                                        </div>
-                                        <div class="input-field">
-
+                                            
                                             <input name="submit"  id="login" type="submit" class="submit" value="Sign in">
                                         </div>
                             </form>   
+
+
                             <div class="signin">
                                 <span>Forgot Password? <a href="forgotpassword">Click here</a></span>
                             </div>

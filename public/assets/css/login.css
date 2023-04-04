@@ -69,6 +69,13 @@ i{
     position: relative;
     padding: 0 10px 0 10px;
 }
+/* .input-field .submitmolang:hover{
+    background: linear-gradient(
+        45deg,
+        hsla(168, 85%, 52%, 0.5),
+        hsla(263, 88%, 45%, 0.5) 100%
+      );
+} */
 .input{
     height: 45px;
     width: 100%;
@@ -107,8 +114,13 @@ i{
     transition: .4s;
 }
 .submit:hover{
-    background: rgba(37, 95, 156,0.9);
-    color: #fff;
+    /* background: rgba(37, 95, 156,0.9); */
+    background: linear-gradient(
+        45deg,
+        hsla(168, 85%, 52%, 0.5),
+        hsla(263, 88%, 45%, 0.5) 100%
+      );
+    /* color: #fff; */
 }
 .signin{
     text-align: center;

@@ -96,7 +96,7 @@
 						
 						
 						<div class="read_bt">
-                    <button class="btn btn-primary" style="background-color:#1a7a92; "  data-toggle="modal" data-target="#myModal" data-whatever="@mdo" id="reservenow">
+                    <button class="btn btn-primary"   data-toggle="modal" data-target="#myModal" data-whatever="@mdo" id="reservenow">
                         Reserve Now!
                     </button>
                 </div> 
@@ -403,8 +403,8 @@
                                        <br>
                                        <br>
                                     <div class="modal-footer" style="width:50%;padding:2%;float:left;">
-                                          <button type="button"  style="background-color:gray;" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                          <button type="submit" style="background-color:#1a7a92;" class="btn btn-primary">Send message</button>
+                                          <button type="button"  class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          <button type="submit"  class="btn btn-primary">Send message</button>
                                     </div>
                               </form>
                         </div>  
@@ -419,14 +419,14 @@
       <script src="../assets/style-lp/js/jquery-3.0.0.min.js"></script>
       <script src="../assets/style-lp/js/plugin.js"></script>
       <!-- sidebar -->
-      <script src="../assets/style-lp/js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="../assets/style-lp/js/custom.js"></script>
+      <!-- <script src="../assets/style-lp/js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="../assets/style-lp/js/custom.js"></script> -->
       <!-- javascript --> 
-      <script src="../assets/style-lp/js/owl.carousel.js"></script>
+      <!-- <script src="../assets/style-lp/js/owl.carousel.js"></script>
       <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>      
 
 
-   
+    -->
 
       <script>
         //  let disabledDates = [];
@@ -484,32 +484,6 @@ var currentDate = new Date();
    
 });   
       </script>
-
-      <script>
-        function setTime() {
-    var d = new Date(),
-      el = document.getElementById("time");
-      el.innerHTML = formatAMPM(d);
-    setTimeout(setTime, 1000);
-    }
-    function formatAMPM(date) {
-      var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-        year = date.getFullYear(),
-        day = date.getDate(),
-        month = months[date.getMonth()],
-        hours = date.getHours(),
-        minutes = date.getMinutes(),
-        seconds = date.getSeconds(),
-        ampm = hours >= 12 ? 'pm' : 'am';
-      hours = hours % 12;
-      hours = hours : 12; // the hour '0' should be '12'
-      minutes = minutes < 10 ? '0'+ minutes : minutes;
-      var strTime = month + '&nbsp' + day + ','+'&nbsp'+ year + '&nbsp' + hours + ':' + minutes + ':' + seconds + ' ' + ampm;
-      return strTime;
-    }
-    setTime();
-      </script>
-
 
     
        
