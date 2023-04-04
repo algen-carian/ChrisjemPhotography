@@ -5777,6 +5777,10 @@ textarea.form-control-lg {
   margin-bottom: 0;
   line-height: 1.5;
 }
+.modal-title:hover{
+  color:#0d6efd;
+
+}
 
 .modal-body {
   position: relative;
@@ -11741,4 +11745,10 @@ body {
 
 .footer {
   padding: 5rem 0;
+}
+
+.footer-button:hover{
+  color:green;
+
+
 }

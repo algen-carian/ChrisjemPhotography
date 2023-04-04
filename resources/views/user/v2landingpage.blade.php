@@ -42,7 +42,7 @@
 	
     <body id="page-top">
 
-    <!-- @if (session('Success'))
+    @if (session('Success'))
          <div class="alert alert-success" role="alert" >
             {{ session('Success') }}
          </div>
@@ -56,7 +56,7 @@
          setTimeout(function() {
             $('.alert').fadeOut();
          }, 5000);
-      </script> -->
+      </script>
 
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -96,7 +96,7 @@
 						
 						
 						<div class="read_bt">
-                    <button class="btn btn-primary"  data-toggle="modal" data-target="#myModal" data-whatever="@mdo" id="reservenow">
+                    <button class="btn btn-primary" style="background-color:#1a7a92; "  data-toggle="modal" data-target="#myModal" data-whatever="@mdo" id="reservenow">
                         Reserve Now!
                     </button>
                 </div> 
@@ -345,20 +345,20 @@
                                     </div>
                                     <div class="form-group" style="width:50%;padding:2%;float:left;">
                                         <label for="message-text" class="col-form-label">Location:</label>
-                                        <input name="Address"  class="form-control shadow" id="Address" required>
+                                        <input name="Address"  class="form-control shadow" id="Address" placeholder ="Location" required>
                                     </div>
                                     <div class="form-group" style="width:35%;padding:2%;float:left;">
                                         <label for="message-text" class="col-form-label">Contact:</label>
-                                        <input name="contact"  type="number" class="form-control shadow" id="contact" required>
+                                        <input name="contact"  type="number" class="form-control shadow" placeholder ="No." id="contact" required>
                                     </div>
                                     <div class="form-group" style="width:35%;padding:2%;float:left;">
                                         <label for="message-text" class="col-form-label">Alternate Number:</label>
-                                        <input name="alternate"  type="number" class="form-control shadow" id="alternate" required>
+                                        <input name="alternate"  type="number" class="form-control shadow" placeholder ="No." id="alternate" required>
                                     </div>
                                     
                                     <div class="form-group" style="width:30%;padding:2%;float:left;">
                                         <label for="message-text" class="col-form-label">Date of Event:</label>
-                                        <input name="Event"  class="form-control shadow"  id="datepicker" autocomplete="off"  required >
+                                        <input name="Event"  class="form-control shadow"  placeholder ="MM/DD/YY."id="datepicker" autocomplete="off"  required >
                                     </div>    
                                       
                                     <div class="form-group" style="width:50%;padding:2%;float:left;">
@@ -403,8 +403,8 @@
                                        <br>
                                        <br>
                                     <div class="modal-footer" style="width:50%;padding:2%;float:left;">
-                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                          <button type="submit" class="btn btn-primary">Send message</button>
+                                          <button type="button"  style="background-color:gray;" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          <button type="submit" style="background-color:#1a7a92;" class="btn btn-primary">Send message</button>
                                     </div>
                               </form>
                         </div>  
@@ -429,33 +429,85 @@
    
 
       <script>
-         let disabledDates = [];
+        //  let disabledDates = [];
 
-         document.getElementById("reservenow").onclick = function() 
-         {
-            var reserve = {!! json_encode($reservation) !!};  
-            reserve.forEach(element => {
-               disabledDates.push(element.Event_date);
-            });
-            console.log(disabledDates);
-         };
+        //  document.getElementById("reservenow").onclick = function() 
+        //  {
+        //     var reserve = {!! json_encode($reservation) !!};  
+        //     reserve.forEach(element => {
+        //        disabledDates.push(element.Event_date);
+        //     });
+        //     console.log(disabledDates);
+        //  };
 
 
-        $(function() {
+        // $(function() {
 
-         var currentDate = new Date();
-            $("#datepicker").datepicker({
+        //  var currentDate = new Date();
+        //     $("#datepicker").datepicker({
                 
-               beforeShowDay: function(date) {
-                if(currentDate==date){
+        //        beforeShowDay: function(date) {
+        //         if(currentDate==date){
 
-                }
-                  let formattedDate = $.datepicker.formatDate("yy-mm-dd", date);
-                  return [disabledDates.indexOf(formattedDate) == -1 && date >= currentDate];
-               }
-            });   
-            
-         });   
+        //         }
+        //           let formattedDate = $.datepicker.formatDate("yy-mm-dd", date);
+        //           return [disabledDates.indexOf(formattedDate) == -1 && date >= currentDate];
+        //        }
+        //     });         
+        //  });   
+
+        let disabledDates = [];
+
+document.getElementById("reservenow").onclick = function() 
+{
+   var reserve = {!! json_encode($reservation) !!};
+
+  
+   console.log(reserve);
+   reserve.forEach(element => {
+      disabledDates.push(element.Event_date);
+   });
+   console.log(disabledDates);
+
+};
+
+
+$(function() {
+
+var currentDate = new Date();
+   $("#datepicker").datepicker({
+      beforeShowDay: function(date) {
+         let formattedDate = $.datepicker.formatDate("yy-mm-dd", date);
+         return [disabledDates.indexOf(formattedDate) == -1];
+      }
+   });   
+   
+});   
+      </script>
+
+      <script>
+        function setTime() {
+    var d = new Date(),
+      el = document.getElementById("time");
+      el.innerHTML = formatAMPM(d);
+    setTimeout(setTime, 1000);
+    }
+    function formatAMPM(date) {
+      var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+        year = date.getFullYear(),
+        day = date.getDate(),
+        month = months[date.getMonth()],
+        hours = date.getHours(),
+        minutes = date.getMinutes(),
+        seconds = date.getSeconds(),
+        ampm = hours >= 12 ? 'pm' : 'am';
+      hours = hours % 12;
+      hours = hours : 12; // the hour '0' should be '12'
+      minutes = minutes < 10 ? '0'+ minutes : minutes;
+      var strTime = month + '&nbsp' + day + ','+'&nbsp'+ year + '&nbsp' + hours + ':' + minutes + ':' + seconds + ' ' + ampm;
+      return strTime;
+    }
+    setTime();
       </script>
 
 
