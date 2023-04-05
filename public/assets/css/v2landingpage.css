@@ -4213,6 +4213,9 @@ textarea.form-control-lg {
   text-decoration: none;
   white-space: nowrap;
 }
+.navbar-brand img{
+  position:relative;
+}
 .navbar-nav {
   display: flex;
   flex-direction: column;
@@ -11753,6 +11756,18 @@ body {
 }
 .btn-primary:hover{
   background-color:green;
+}
 
+.alertSaKanto{
 
+  color:blue; 
+  background-color:#cfffe6; 
+  border-color:#0dcaf0;  
+  padding: 25px 50px 50px 50px;   
+  margin: 0% 0% 0% 0%; 
+  font-family:Times New Roman; 
+  text-align:center; 
+  font-size:20px; 
+  position:absolute;
+  /* position: absolute; */
 }

@@ -15,13 +15,11 @@
     <div class="wrapper">
 
     @if(session()->has('status') || session() === null)
-<!-- <div class="alerto"> -->
-<div class="alert alert-primary "  style="color:red; background-color:#cfffe6; border-color:#0dcaf0;  padding: 25px 50px 50px 50px;   margin: 0px 50px 75px 100px;">
+
+<div class="alert alert-primary "  style="color:red; background-color:#cfffe6; border-color:#0dcaf0;  padding: 25px 50px 50px 50px;   margin: 0% 0% 0% 40%; font-family:Times New Roman; text-align:center; font-size:20px; position:absolute; ">
     <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-    <strong>WARNING!</strong> {{ session()->get('status') }}
-  
+    <strong>WARNING!</strong> {{ session()->get('status') }} 
 </div>
-<!-- </div> -->
 @endif
 
 

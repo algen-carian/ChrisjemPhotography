@@ -40,13 +40,13 @@
 
 
         
-    @if (session('Success'))
-         <div class="alert alert-success" role="alert" >
+    <!-- @if (session('Success'))
+         <div class="alert alert-success alertSaKanto" role="alert" >
             {{ session('Success') }}
          </div>
       @endif
       @if (session('Failed'))
-         <div class="alert alert-danger" role="alert" >
+         <div class="alert alert-danger alertSaKanto" role="alert" >
             {{ session('Failed') }}
          </div>
       @endif
@@ -54,7 +54,7 @@
          setTimeout(function() {
             $('.alert').fadeOut();
          }, 5000);
-      </script>
+      </script> -->
 
     </head>
 
@@ -64,7 +64,7 @@
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand" href="#page-top">
                     
-                    <img src="assets/img/picxellence.png" alt="logo" style="width: 75px;">
+                    <img src="assets/img/picxellence.png" alt="logo" style="width: 75px; z-index: index 1;">
                 
                 </a>
                 
@@ -82,11 +82,30 @@
                 </div>
             </div>
         </nav>
+
+
         <!-- Masthead-->
         <header class="masthead">
+   
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
+                                 
+        @if (session('Success'))
+         <div class="alert alert-success alertSaKanto" role="alert" >
+            {{ session('Success') }}
+         </div>
+      @endif
+      @if (session('Failed'))
+         <div class="alert alert-danger alertSaKanto" role="alert" >
+            {{ session('Failed') }}
+         </div>
+      @endif
+      <script>
+         setTimeout(function() {
+            $('.alert').fadeOut();
+         }, 5000);
+      </script>
                         <h1 class="mx-auto my-0 text-uppercase">Picxellence</h1>
                         <h2 class="text-white-50 mx-auto mt-2 mb-5">Book for a special occasion.</h2>
 						
@@ -94,6 +113,9 @@
                         <!-- <a class="btn btn-primary" href="#about"  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" id="reservenow">
                         Reserve Now!
                     </a>  -->
+            
+
+            
 						
 						
 						<div class="read_bt">
@@ -324,7 +346,7 @@
                      <div class="modal-content">
                             <div class="modal-header">
                                 <h3 class="modal-title" id="exampleModalLabel">Reserve Events</h3>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <button type="button" STYLE="hover-color:red;"class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
@@ -354,7 +376,7 @@
                                     </div>
                                     <div class="form-group" style="width:35%;padding:2%;float:left;">
                                         <label for="message-text" class="col-form-label">Alternate Number:</label>
-                                        <input name="alternate"  type="number" class="form-control shadow" placeholder ="No." id="alternate" required>
+                                        <input name="alternate"  type="number" class="form-control shadow" placeholder ="xxx-xxx-xxxx" id="alternate" required>
                                     </div>
                                     
                                     <div class="form-group" style="width:30%;padding:2%;float:left;">
@@ -433,60 +455,61 @@
     -->
 
       <script>
-        //  let disabledDates = [];
+         let disabledDates = [];
 
-        //  document.getElementById("reservenow").onclick = function() 
-        //  {
-        //     var reserve = {!! json_encode($reservation) !!};  
-        //     reserve.forEach(element => {
-        //        disabledDates.push(element.Event_date);
-        //     });
-        //     console.log(disabledDates);
-        //  };
+         document.getElementById("reservenow").onclick = function() 
+         {
+            var reserve = {!! json_encode($reservation) !!};  
+            reserve.forEach(element => {
+               disabledDates.push(element.Event_date);
+            });
+            console.log(disabledDates);
+         };
 
 
-        // $(function() {
+        $(function() {
 
-        //  var currentDate = new Date();
-        //     $("#datepicker").datepicker({
+         var currentDate = new Date();
+
+            $("#datepicker").datepicker({
                 
-        //        beforeShowDay: function(date) {
-        //         if(currentDate==date){
+               beforeShowDay: function(date) {
+                if(currentDate==date){
 
-        //         }
-        //           let formattedDate = $.datepicker.formatDate("yy-mm-dd", date);
-        //           return [disabledDates.indexOf(formattedDate) == -1 && date >= currentDate];
-        //        }
-        //     });         
-        //  });   
+                }
+                  let formattedDate = $.datepicker.formatDate("yy-mm-dd", date);
+                  return [disabledDates.indexOf(formattedDate) == -1 && date >= currentDate];
+               }
+            });         
+         });   
 
-        let disabledDates = [];
+//         let disabledDates = [];
 
-document.getElementById("reservenow").onclick = function() 
-{
-   var reserve = {!! json_encode($reservation) !!};
+// document.getElementById("reservenow").onclick = function() 
+// {
+//    var reserve = {!! json_encode($reservation) !!};
 
   
-   console.log(reserve);
-   reserve.forEach(element => {
-      disabledDates.push(element.Event_date);
-   });
-   console.log(disabledDates);
+//    console.log(reserve);
+//    reserve.forEach(element => {
+//       disabledDates.push(element.Event_date);
+//    });
+//    console.log(disabledDates);
 
-};
+// };
 
 
-$(function() {
+// $(function() {
 
-var currentDate = new Date();
-   $("#datepicker").datepicker({
-      beforeShowDay: function(date) {
-         let formattedDate = $.datepicker.formatDate("yy-mm-dd", date);
-         return [disabledDates.indexOf(formattedDate) == -1];
-      }
-   });   
+// var currentDate = new Date();
+//    $("#datepicker").datepicker({
+//       beforeShowDay: function(date) {
+//          let formattedDate = $.datepicker.formatDate("yy-mm-dd", date);
+//          return [disabledDates.indexOf(formattedDate) == -1];
+//       }
+//    });   
    
-});   
+// });   
       </script>
 
     
