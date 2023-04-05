@@ -38,10 +38,8 @@
         <script src="assets/js/scripts.js"></script>
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
-    </head>
-	
-    <body id="page-top">
 
+        
     @if (session('Success'))
          <div class="alert alert-success" role="alert" >
             {{ session('Success') }}
@@ -58,6 +56,9 @@
          }, 5000);
       </script>
 
+    </head>
+
+    <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container px-4 px-lg-5">
@@ -412,6 +413,9 @@
                   </div>
             </div>
         <!-- End of Large Modal -->
+
+
+
 <!-- Javascript files-->
 <script src="../assets/style-lp/js/jquery.min.js"></script>
       <script src="../assets/style-lp/js/popper.min.js"></script>

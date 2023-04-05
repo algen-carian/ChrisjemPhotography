@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
 
+:root {
+    --bs-alert-color: #dc3545;
+    --bs-alert-bg: #cfffe6;
+    --bs-alert-border-color: #0dcaf0;
+}
+
+
 *{
     font-family: 'Poppins', sans-serif;
 }
@@ -76,6 +83,8 @@ i{
         hsla(263, 88%, 45%, 0.5) 100%
       );
 } */
+
+
 .input{
     height: 45px;
     width: 100%;

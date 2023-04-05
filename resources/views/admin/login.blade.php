@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="stylesheet" href="../assets/css/v2landingpage.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <title>Login Account</title>
 	  <link rel="icon" type="" href="picxellence.png">
@@ -14,12 +15,13 @@
     <div class="wrapper">
 
     @if(session()->has('status') || session() === null)
-
-<div class="alert alert-primary ">
+<!-- <div class="alerto"> -->
+<div class="alert alert-primary "  style="color:red; background-color:#cfffe6; border-color:#0dcaf0;  padding: 25px 50px 50px 50px;   margin: 0px 50px 75px 100px;">
     <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
     <strong>WARNING!</strong> {{ session()->get('status') }}
   
 </div>
+<!-- </div> -->
 @endif
 
 
