@@ -11727,6 +11727,15 @@ body {
   border-width: 0.25rem;
   width: 3rem;
 }
+.small{
+  color:#1cabc4;
+}
+.small a{
+  color:#1cabc4;
+}
+.social:hover a{
+  color:#0dcaf0;
+}
 .contact-section .social {
   margin-top: 5rem;
 }

@@ -302,7 +302,7 @@
                                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Address</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">Iram, New Cabalan Olongapo City</div>
+                                <div class="small">Iram, New Cabalan Olongapo City</div>
                             </div>
                         </div>
                     </div>
@@ -312,7 +312,7 @@
                                 <i class="fas fa-envelope text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Email</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50"><a href="#!">chrisjemphotography@gmail.com</a></div>
+                                <div class="small"><a href="#!">chrisjemphotography@gmail.com</a></div>
                             </div>
                         </div>
                     </div>
@@ -322,7 +322,7 @@
                                 <i class="fas fa-mobile-alt text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Phone</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">+63 09122490655</div>
+                                <div class="small">+63 09122490655</div>
                             </div>
                         </div>
                     </div>
@@ -372,7 +372,7 @@
                                     </div>
                                     <div class="form-group" style="width:35%;padding:2%;float:left;">
                                         <label for="message-text" class="col-form-label">Contact:</label>
-                                        <input name="contact"  type="number" class="form-control shadow" placeholder ="No." id="contact" required>
+                                        <input name="contact"  type="number" class="form-control shadow" placeholder ="xxx-xxx-xxxx" id="contact" required>
                                     </div>
                                     <div class="form-group" style="width:35%;padding:2%;float:left;">
                                         <label for="message-text" class="col-form-label">Alternate Number:</label>
@@ -428,7 +428,7 @@
                                     <div class="modal-footer" style="width:50%;padding:2%;float:left;">
                                           <button type="button"  class="btn btn-secondary" data-dismiss="modal">Close</button>
                                           <button type="submit"  class="btn btn-primary">Send message</button>
-                                    </div>
+                                    </div>      
                               </form>
                         </div>  
                      </div>
