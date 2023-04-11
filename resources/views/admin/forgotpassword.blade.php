@@ -24,6 +24,8 @@
                 <div class="col-md-6 right">
                      <div class="input-box">
                         <header>Forgot Password</header>
+                        <form  method="post" action="{{url('/adminlogin')}}">
+                             @csrf
                         <div class="input-field">
                             <input type="text" class="input" id="email" required autocomplete="off">
                             <label for="email">Email</label>

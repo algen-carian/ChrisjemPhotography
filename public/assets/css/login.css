@@ -48,8 +48,11 @@ img{
     transform: translate(-50%, -50%);
 }
 .text p{
+    position:relative;  
     color: #fff;
     font-size: 18px;
+    text-align: start;
+
 }
 i{
     font-weight: 400;

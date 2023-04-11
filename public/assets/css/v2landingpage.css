@@ -7956,7 +7956,9 @@ textarea.form-control-lg {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-success-rgb), var(--bs-text-opacity)) !important;
 }
-
+.text{
+  text-align: justify;
+}
 .text-info {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-info-rgb), var(--bs-text-opacity)) !important;
@@ -8010,6 +8012,7 @@ textarea.form-control-lg {
 .text-white-50 {
   --bs-text-opacity: 1;
   color: rgba(255, 255, 255, 0.5) !important;
+  text-align: justify;
 }
 
 .text-reset {
@@ -11631,6 +11634,7 @@ body {
 .masthead h2, .masthead .h2 {
   max-width: 20rem;
   font-size: 1rem;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .masthead h1, .masthead .h1 {
@@ -11657,6 +11661,9 @@ body {
 .about-section {
   padding-top: 10rem;
   background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+  box-shadow: 20px 20px 50px black;
+  margin-bottom: 5rem;
+
 }
 .about-section p {
   margin-bottom: 5rem;
@@ -11765,6 +11772,7 @@ body {
 }
 .btn-primary:hover{
   background-color:green;
+  color:#1cabc4;
 }
 
 .alertSaKanto{
@@ -11779,4 +11787,16 @@ body {
   font-size:20px; 
   position:absolute;
   /* position: absolute; */
+}
+
+/* .aboutusfooter a{
+  text-align: justify;
+} */
+/* .aboutusfooter a{
+  text-align: justify;
+
+} */
+button, [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button;
+  border-color: powderblue;
 }

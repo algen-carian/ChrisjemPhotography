@@ -107,7 +107,7 @@
          }, 5000);
       </script>
                         <h1 class="mx-auto my-0 text-uppercase">Picxellence</h1>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Book for a special occasion.</h2>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5 text-align-center">Book for a special occasion.</h2>
 						
 						
                         <!-- <a class="btn btn-primary" href="#about"  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" id="reservenow">
@@ -120,7 +120,7 @@
 						
 						<div class="read_bt">
                     <button class="btn btn-primary"   data-toggle="modal" data-target="#myModal" data-whatever="@mdo" id="reservenow">
-                        Reserve Now!
+                        <p>Reserve Now!</p>
                     </button>
                 </div> 
 
@@ -135,12 +135,17 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
-                        <h2 class="text-white mb-4">It's about class</h2>
-                        <p class="text-white-50">
-                            Pixellence is a malupitang website na gawa ni algen carianatixcs, first bite, thankyou lord.
-                            <a href="#">Amen.</a>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste ad quis blanditiis.
-                        </p>
+                        <h2 class="text-white mb-4">About Us</h2>
+                        <p class="text-white-50 ">
+                        At Chrisjem Photography, we focus on offering our clients high-quality services and goods. Chris Jem Brion, who identified a need for a business that could provide outstanding customer service and high-quality products, launched us in 2005.
+
+Our goal is to produce superior products and outstanding customer service in order to give our clients the greatest experience possible. We think that by doing this, we can establish enduring connections with our clients and establish ourselves as the go-to supplier for their requirements.
+
+Professionals with exceptional skills and a love for what they do make up our team. Everyone at Chrisjem Photography, from our staff to our customer service reps, is dedicated to giving our customers the finest experience imaginable.
+Please don't hesitate to get in touch with us if you have any queries or would want to know more about our products or services. We can be reached at  
+                        <a href="#">chrisjemphotography@gmail.com or +63 09122490655.</a><br><br>                     
+                            Thank you for choosing Chrisjem Photography!
+                            </p>
                     </div>
                 </div>
                 <img class="img-fluid" src="assets/img/cam.png" alt="..." />
@@ -372,11 +377,11 @@
                                     </div>
                                     <div class="form-group" style="width:35%;padding:2%;float:left;">
                                         <label for="message-text" class="col-form-label">Contact:</label>
-                                        <input name="contact"  type="number" class="form-control shadow" placeholder ="xxx-xxx-xxxx" id="contact" required>
+                                        <input name="contact"  type="number" class="form-control shadow" placeholder ="09x-xxx-xxxx" id="contact" required>
                                     </div>
                                     <div class="form-group" style="width:35%;padding:2%;float:left;">
                                         <label for="message-text" class="col-form-label">Alternate Number:</label>
-                                        <input name="alternate"  type="number" class="form-control shadow" placeholder ="xxx-xxx-xxxx" id="alternate" required>
+                                        <input name="alternate"  type="number" class="form-control shadow" placeholder =09x-xxx-xxxx" id="alternate" required>
                                     </div>
                                     
                                     <div class="form-group" style="width:30%;padding:2%;float:left;">

@@ -23,9 +23,8 @@ body {
 }
 
 .container {
-  position: absolute;
+  position: relative;
   width: 100%;
- 
 }
 
 /* =============== Navigation ================ */
@@ -132,9 +131,9 @@ body {
 
 /* ===================== Main ===================== */
 .main {
-  position: relative;
-  width: calc(100% - 200px);
-  left: 300px;
+  position: absolute;
+  width: calc(100% - 300px);
+  left:300px;
   min-height: 100vh;
   background: var(--white);
   transition: 0.5s;
@@ -281,16 +280,6 @@ body {
   border-radius: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
 .details .cardHeader {
   display: flex;
   justify-content: space-between;
@@ -309,6 +298,7 @@ body {
   border-radius: 6px;
 }
 
+
 .details table {
   width: 100%;
   border-collapse: collapse;
@@ -317,27 +307,27 @@ body {
 .details table thead td {
   font-weight: 600;
 }
-.details .recentOrders table tr {
+.details .recentReservations table tr {
   color: var(--black1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.details .recentOrders table tr:last-child {
+.details .recentReservations table tr:last-child {
   border-bottom: none;
 }
-.details .recentOrders table tbody tr:hover {
+.details .recentReservations table tbody tr:hover {
   background: var(--blue);
   color: var(--white);
 }
-.details .recentOrders table tr td {
+.details .recentReservations table tr td {
   padding: 10px;
 }
-.details .recentOrders table tr td:last-child {
+.details .recentReservations table tr td:last-child {
   text-align: end;
 }
-.details .recentOrders table tr td:nth-child(2) {
+.details .recentReservations table tr td:nth-child(2) {
   text-align: end;
 }
-.details .recentOrders table tr td:nth-child(3) {
+.details .recentReservations table tr td:nth-child(3) {
   text-align: center;
 }
 .status.approved {
@@ -348,6 +338,11 @@ body {
   font-size: 14px;
   font-weight: 500;
 }
+.status.approved .custom-btn .btn-approve{
+  position: absolute;
+    background-color:#2ed30d;
+ 
+  }
 .status.pending {
   padding: 2px 4px;
   background: #e9b10a;
@@ -372,7 +367,91 @@ body {
   font-size: 14px;
   font-weight: 500;
 }
+/* FOR COLORING OF APPROVED,CANCEL AND VIEW  */
 
+.custom-btnbtn-approve {
+  padding: 2px 4px;
+  background: #77DD77;
+  color: var(--white);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  border-width : 0;
+}
+.custom-btn_btn-cancel {
+  padding: 2px 4px;
+  background: #f00;
+  color: var(--white);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  border-width : 0;
+}
+.custom-btn_btn-finished {
+  padding: 2px 4px;
+  background: #1795ce;
+  color: var(--white);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  border-width : 0;
+}
+.custom-btn_btn-view{
+  padding: 2px 4px;
+  background: #e9b10a;
+  color: var(--white);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  border-width : 0;
+}
+
+.table {
+  position: relative;
+  display: grid;
+  min-height: 500px;
+  padding: 20px;
+  background: var(--white);
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+}
+.table .imgBx {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.table .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.table table tr td {
+  padding: 12px 10px;
+}
+.table table tr td h4 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2rem;
+}
+.table table tr td h4 span {
+  font-size: 14px;
+  color: var(--black2);
+}
+.table table tr:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+.table table tr:hover td h4 span {
+  color: var(--white);
+}
+
+
+/* ====================== RECENT RESERVATION ========================== */
 .recentReservations {
   position: relative;
   display: grid;
@@ -476,6 +555,40 @@ body {
     color: #fff;
     position: fixed;
     right: 20;
+
     left: initial;
   }
 }
+/* <!-- ========================= PAGINATION ==================== --> */ 
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #1a7a92;
+  color: white;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+/* <!-- ========================= ADMIN HISTORY ==================== --> *//* <!-- ========================= ADMIN HISTORY  ==================== --> */
+
+/* <!-- ========================= ADMIN RESERVATION ==================== --> *//* <!-- ========================= ADMIN RESERVATION  ==================== --> */
+
+/* <!-- ========================= ADMIN VIEW EVENT ==================== --> *//* <!-- ========================= ADMIN VIEW EVENT  ==================== --> */
+
+/* <!-- ========================= ADMIN HISTORY ==================== --> *//* <!-- ========================= ADMIN HISTORY  ==================== --> */
+
+
+

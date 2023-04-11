@@ -31,7 +31,7 @@
                     <!-------Image-------->
                     <img src="assets/picxellence.png" alt="LOGO">
                     <div class="text">
-                        <p>Photography and Videography  Online Reservation System <i>- picxellence</i></p>
+                        <p>Photography and Videography  Online Reservation System <i> - picxellence</i></p>
                     </div>
                 </div>
                 <div class="col-md-6 right">
@@ -51,7 +51,7 @@
                                             <input name="submit"  id="login" type="submit" class="submit" value="Sign in">
                                         </div>
                             </form>   
-
+    
 
                             <div class="signin">
                                 <span>Forgot Password? <a href="forgotpassword">Click here</a></span>
