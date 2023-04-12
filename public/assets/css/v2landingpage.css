@@ -3076,6 +3076,8 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #1795ce;
   border-color: #1795ce;
+  filter: none;
+  opacity: 0.65;
 }
 .btn-primary:hover {
   color: #fff;
