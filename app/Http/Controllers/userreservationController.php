@@ -17,6 +17,7 @@ class userreservationController extends Controller
 
     public function reserve(Request $request,reservation $reservation,r_event $event){
         
+
             $evs = explode('/', $request->Event);
 
             $reservation = new reservation();
@@ -44,34 +45,36 @@ class userreservationController extends Controller
             $lastId = $reservation->id;
             
 
-
-            foreach ($request->input('Services') as $key) {
-                
-                $id = event::find($key);
-
-                $event = new r_event();
-
-                $event->reservation_id = $lastId;
-                $event->event_id = $id->id;
-                $event->Type = "Event";
-                $event->Service  = $id->event_title;                
-                $event->save();
-
+            if($request->input('Services')){
+                foreach ($request->input('Services') as $key) {
+                    $id = event::find($key);
+    
+                    $event = new r_event();
+    
+                    $event->reservation_id = $lastId;
+                    $event->event_id = $id->id;
+                    $event->Type = "Event";
+                    $event->Service  = $id->event_title;                
+                    $event->save();
+    
+                }
             }
 
-            foreach ($request->input('Other_Services') as $key) {
-                $id = event::find($key);
-
-                $event = new r_event();
-
-                $event->reservation_id  = $lastId;
-                $event->event_id = $id->id;
-                $event->Type = "Service";
-                $event->Service  = $id->event_title;                
-                $event->save();
-
+            if($request->input('Other_Services') !== null){
+                foreach ($request->input('Other_Services') as $key) {
+                    $id = event::find($key);
+    
+                    $event = new r_event();
+    
+                    $event->reservation_id  = $lastId;
+                    $event->event_id = $id->id;
+                    $event->Type = "Service";
+                    $event->Service  = $id->event_title;                
+                    $event->save();
+    
+                }
             }
-
+            
             $mail_data = [
                 'recipient' => 'ggmelmark@gmail.com',
                 'fromEmail' => 'ggmelmark@gmail.com',
@@ -88,7 +91,8 @@ class userreservationController extends Controller
                     // });
                     $email = $request->email;
                     FacadesMail::send(
-                        'user.emailTemplate',
+                        'user.emailtemplate',
+                        // 'user.emailTemplate',
                         [
                             'name' => "Algen",
                             'email' => "201911008@gordoncollege.edu.ph",
