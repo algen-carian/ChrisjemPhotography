@@ -28,8 +28,9 @@
                                         <tr>
                                             <td width="570" style="text-align: center">
                                                 <a href="https://picxellence.online" target="_blank">
-                                                    <img alt="ChrisjemLogo" height="50" src="../assets/img/picxellence.png"
-                                                        style="border:0"></a>
+                                                    <!-- <img alt="ChrisjemLogo" height="50" src="assets/img/picxellence.png"
+                                                        style="border:0"></a> -->
+                                                        <img src="assets/img/picxellence.png" alt="logo" style="height: 50px;">
                                             </td>
                                         </tr>
                                     </tbody>
