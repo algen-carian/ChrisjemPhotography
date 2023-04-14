@@ -11780,7 +11780,6 @@ body {
 }
 
 .alertSaKanto{
-
   color:blue; 
   background-color:#cfffe6; 
   border-color:#0dcaf0;  
@@ -11790,7 +11789,6 @@ body {
   text-align:center; 
   font-size:20px; 
   position:absolute;
-  /* position: absolute; */
 }
 
 /* .aboutusfooter a{

@@ -27,8 +27,8 @@
                                     <tbody>
                                         <tr>
                                             <td width="570" style="text-align: center">
-                                                <a href="https://picxellence.online" target="_blank">
-                                                    <img alt="ChrisjemLogo" height="50" src="../assets/img/picxellence.png"
+                                                <a href="https://lavanda.co.uk" target="_blank">
+                                                    <img alt="Lavanda Logo" height="50" src="https://lavanda.co.uk/wp-content/themes/lavanda-theme/assets/img/logo-black.png"
                                                         style="border:0"></a>
                                             </td>
                                         </tr>
@@ -75,18 +75,18 @@
                                                         <tr>
                                                             <td align="left" style="font-family:'Open Sans',helvetica,arial,sans-serif!important;font-size:16px!important;line-height:30px!important;font-weight:100!important;color:#7e8890!important">
                                                                 <p>Thank you for choosing our photography services for your upcoming Event. We are excited to work with you and capture beautiful memories that will last a lifetime.
-                                                                </p><br>
-                                                                <p>Please note that the date and time of your session have been reserved exclusively for you. If you need to reschedule or cancel your session, please let us know at 
-                                                                least 48 hours in advance. Failure to do so will result in the forfeiture of your deposit.
-                                                              </p><br><br>
+<br>
+Please note that the date and time of your session have been reserved exclusively for you. If you need to reschedule or cancel your session, please let us know at 
+least 48 hours in advance. Failure to do so will result in the forfeiture of your deposit.
+<br><br></p>
                                                                 <!-- <ul style="text-align: left">
                                                                     <li>Guest name: <strong>Emmet Rennick</strong></li>
                                                                     <li>Number of guests: <strong>3</strong></li>
                                                                     <li>Check in: <strong>Mar 21st</strong></li>
                                                                     <li>Check out: <strong>Mar 23rd</strong></li>
                                                                     <li>Total nights: <strong>2</strong></li>
-                                                               <li>Your earning: <strong>£350.00</strong></li> -->
-                                                                <!-- </ul> --> 
+<!--                                                                     <li>Your earning: <strong>£350.00</strong></li> -->
+                                                                <!-- </ul> --> -->
                                                                 <p>Best regards,</p>
                                                                 <p>Chrisjem Photography</p>
                                                             </td>

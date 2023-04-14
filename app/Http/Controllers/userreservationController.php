@@ -94,14 +94,14 @@ class userreservationController extends Controller
                         'user.emailtemplate',
                         // 'user.emailTemplate',
                         [
-                            'name' => "Algen",
-                            'email' => "201911008@gordoncollege.edu.ph",
+                            'name' => "Chrisjem Photography",
+                            'email' => "chrisjemphotography@gmail.com",
                             'comment' => "Comment"
                         ],
                         function ($message) use ($email) {
                             $message->from($address = '201911008@gordoncollege.edu.ph', $name = "Photography Picxellence");
                             $message->to($email, 'recipient')
-                                ->subject('Your Website Contact Form');
+                                ->subject('Your reservation has been approved');
                         }
                     );
 
@@ -128,12 +128,12 @@ class userreservationController extends Controller
             FacadesMail::send(
                 'user.emailTemplate',
                 [
-                    'name' => "Algen",
-                    'email' => "201911008@gordoncollege.edu.ph",
+                    'name' => "Chrisjem Photography",
+                    'email' => "chrisjemphotography@gmail.com",
                     'comment' => "Comment"
                 ],
                 function ($message) use ($email) {
-                    $message->from($address = '201911008@gordoncollege.edu.ph', $name = "Photography Picxellence");
+                    $message->from($address = 'chrisjemphotography@gmail.com', $name = "Photography Picxellence");
                     $message->to($email, 'recipient')
                         ->subject('Your reservation has been approved');
                 }
