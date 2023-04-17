@@ -27,10 +27,10 @@
                                     <tbody>
                                         <tr>
                                             <td width="570" style="text-align: center">
-                                                <a href="https://picxellence.online" target="_blank">
+                                                <!-- <a href="https://picxellence.online" target="_blank"> -->
                                                     <!-- <img alt="ChrisjemLogo" height="50" src="assets/img/picxellence.png"
                                                         style="border:0"></a> -->
-                                                        <img src="assets/img/picxellence.png" alt="logo" style="height: 50px;">
+                                                        <!-- <img src="../../../public/assets/picxellence.png" alt="logo" style="height: 50px;"> -->
                                             </td>
                                         </tr>
                                     </tbody>
@@ -45,7 +45,10 @@
                                 <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" style="overflow:hidden!important;border-radius:3px" width="580">
                                     <tbody>
                                         <tr>
-                                            <td>&nbsp;</td>
+                                            <td>&nbsp;
+                                            <img src="../../../public/assets/picxellence.png" alt="logo" style="height: 50px;">
+                                            <!-- src: url('../../../public/assets/picxellence.png'); -->
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>&nbsp;</td>

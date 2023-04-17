@@ -117,23 +117,42 @@ class userreservationController extends Controller
           
            
     }
-    public function updateStatus($id){
+    public function updateStatus(Request $request, $id){
         $event = reservation::find($id);
+    
+        // dd($event->email);
         if ($event->event_status == "Approved") {
             $event->event_status = 'Finish';
         }else{
             $event->event_status = 'Approved';
 
+            // $email = $event->email;
+            // FacadesMail::send(
+            //     'user.emailtemplate',
+            //     [
+            //         'name' => "Chrisjem Photography",
+            //         'email' => "chrisjemphotography@gmail.com",
+            //         'comment' => "Comment"
+            //     ],
+            //     function ($message) use ($email) {
+            //         $message->from($address = 'chrisjemphotography@gmail.com', $name = "Photography Picxellence");
+            //         $message->to($email, 'recipient')
+            //             ->subject('Your reservation has been approved');
+            //     }
+            // );
+            
             $email = $event->email;
+            
             FacadesMail::send(
-                'user.emailTemplate',
+                'user.emailtemplate',
+                // 'user.emailTemplate',
                 [
                     'name' => "Chrisjem Photography",
                     'email' => "chrisjemphotography@gmail.com",
                     'comment' => "Comment"
                 ],
                 function ($message) use ($email) {
-                    $message->from($address = 'chrisjemphotography@gmail.com', $name = "Photography Picxellence");
+                    $message->from($address = '201911008@gordoncollege.edu.ph', $name = "Photography Picxellence");
                     $message->to($email, 'recipient')
                         ->subject('Your reservation has been approved');
                 }

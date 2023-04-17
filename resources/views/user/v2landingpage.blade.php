@@ -381,7 +381,7 @@ Please don't hesitate to get in touch with us if you have any queries or would w
                                     </div>
                                     <div class="form-group" style="width:35%;padding:2%;float:left;">
                                         <label for="message-text" class="col-form-label">Alternate Number:</label>
-                                        <input name="alternate"  type="number" class="form-control shadow" placeholder =09x-xxx-xxxx" id="alternate" required>
+                                        <input name="alternate"  type="number" class="form-control shadow" placeholder ="09x-xxx-xxxx" id="alternate" required>
                                     </div>
                                     
                                     <div class="form-group" style="width:30%;padding:2%;float:left;">
