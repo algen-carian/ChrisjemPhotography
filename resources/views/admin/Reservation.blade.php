@@ -143,6 +143,7 @@
                                 @if($ev->event_status == "Pending")
                                     <a href="{{route('updateStatus',$ev->reservation_id)}}"><button class="custom-btn_btn-approve">Approve</button></a>
                                     
+                                    
                                     <a href="{{route('updateCancel',$ev->reservation_id)}}"><button class="custom-btn_btn-cancel">Cancel</button></a>
                                 @endif
                                 @if($ev->event_status == "Approved")

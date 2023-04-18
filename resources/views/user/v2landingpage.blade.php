@@ -516,6 +516,8 @@ Please don't hesitate to get in touch with us if you have any queries or would w
    
 // });   
       </script>
+      <scrip src="public/manifest.json"></scrip>
+    
 
     
        

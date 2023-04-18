@@ -6,6 +6,9 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
     <style> @import url('https://fonts.googleapis.com/css?family=Open+Sans');
   </style>
+<center>
+<img src="assets/img/anniv.jpg" alt="Logo" title="Logo" style="display:block" width="200" height="87" />
+</center>   
   <table align="center" bgcolor="#EAECED" border="0" cellpadding="0" cellspacing="0" width="100%">
     <tbody>
         <tr>
@@ -47,7 +50,7 @@
                                         <tr>
                                             <td>&nbsp;
                                             <img src="../../../public/assets/picxellence.png" alt="logo" style="height: 50px;">
-                                            <!-- src: url('../../../public/assets/picxellence.png'); -->
+                                           <!-- src: url('../../../public/assets/picxellence.png'); -->
                                             </td>
                                         </tr>
                                         <tr>
@@ -159,7 +162,7 @@
             </tr>
             <tr>
                 <td align="center" valign="top">
-                    <p style="margin-bottom:1em;font-family:Open Sans,sans-serif!important;padding:0!important;margin:0!important;color:#7e8890!important;font-size:12px!important;font-weight:300!important">
+                    <p style=" margin-bottom:1em;font-family:Open Sans,sans-serif!important;padding:0!important;margin:0!important;color:#7e8890!important;font-size:12px!important;font-weight:300!important">
                         <span>Iram New Cabalan, Olongapo City, </span></p>
                 </td>
             </tr>

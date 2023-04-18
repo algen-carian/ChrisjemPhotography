@@ -95,7 +95,7 @@ class userreservationController extends Controller
                         // 'user.emailTemplate',
                         [
                             'name' => "Chrisjem Photography",
-                            'email' => "chrisjemphotography@gmail.com",
+                            'email' => "chrisjemphotography123@gmail.com",
                             'comment' => "Comment"
                         ],
                         function ($message) use ($email) {
@@ -135,7 +135,7 @@ class userreservationController extends Controller
             //         'comment' => "Comment"
             //     ],
             //     function ($message) use ($email) {
-            //         $message->from($address = 'chrisjemphotography@gmail.com', $name = "Photography Picxellence");
+            //         $message->from($address = 'chrisjemphotography123@gmail.com', $name = "Photography Picxellence");
             //         $message->to($email, 'recipient')
             //             ->subject('Your reservation has been approved');
             //     }
@@ -148,7 +148,7 @@ class userreservationController extends Controller
                 // 'user.emailTemplate',
                 [
                     'name' => "Chrisjem Photography",
-                    'email' => "chrisjemphotography@gmail.com",
+                    'email' => "chrisjemphotography123@gmail.com",
                     'comment' => "Comment"
                 ],
                 function ($message) use ($email) {
