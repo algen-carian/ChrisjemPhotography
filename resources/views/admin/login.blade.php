@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <title>Login Account</title>
 	  <link rel="icon" type="" href="picxellence.png">
+
+      <!-- PWA  -->
+<meta name="theme-color" content="#6777ef"/>
+<link rel="apple-touch-icon" href="{{ asset('../../../public/assets/PICXELLENCE LOGO.png') }}">
+<link rel="manifest" href="{{ asset('/manifest.json') }}">
 </head>
 <body>
     <div class="wrapper">
@@ -61,5 +66,15 @@
             </div>
         </div>
     </div>
+
+    <!-- PWA -->
+<script src="{{ asset('/sw.js') }}"></script>
+<script>
+    if (!navigator.serviceWorker.controller) {
+        navigator.serviceWorker.register("/sw.js").then(function (reg) {
+            console.log("Service worker has been registered for scope: " + reg.scope);
+        });
+    }
+</script>
 </body>
 </html>

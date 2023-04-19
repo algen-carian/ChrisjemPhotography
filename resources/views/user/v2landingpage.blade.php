@@ -20,6 +20,11 @@
       <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script> 
 
+<!-- PWA  -->
+<meta name="theme-color" content="#6777ef"/>
+<link rel="apple-touch-icon" href="{{ asset('../../../public/assets/PICXELLENCE LOGO.png') }}">
+<link rel="manifest" href="{{ asset('/manifest.json') }}">
+
         <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
 
             <!-- Include jQuery library -->
@@ -488,6 +493,21 @@ Please don't hesitate to get in touch with us if you have any queries or would w
             });         
          });   
 
+// var d = new Date();
+// var hours = d.getHours();
+// var minutes = d.getMinutes();
+// var seconds = d.getSeconds();
+// var date = d.getDate();
+// var month = d.getMonth();
+// var year = d.getFullYear();
+// if (month < 10) {
+//     month = '0' + month;
+// }
+// if (date < 10) {
+//     date = '0' + date;
+// }
+// $(".div_date_time").text(year + "-" + month + "-" + date + " " + hours + ":" + minutes + ":" + seconds);
+
 //         let disabledDates = [];
 
 // document.getElementById("reservenow").onclick = function() 
@@ -516,6 +536,19 @@ Please don't hesitate to get in touch with us if you have any queries or would w
    
 // });   
       </script>
+
+
+<!-- PWA -->
+<script src="{{ asset('/sw.js') }}"></script>
+<script>
+    if (!navigator.serviceWorker.controller) {
+        navigator.serviceWorker.register("/sw.js").then(function (reg) {
+            console.log("Service worker has been registered for scope: " + reg.scope);
+        });
+    }
+</script>
+
+
       <scrip src="public/manifest.json"></scrip>
     
 
