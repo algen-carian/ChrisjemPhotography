@@ -185,5 +185,6 @@ Route::get('/updateCancel/{id}', [userreservationController::class,'updateCancel
 Route::get('/viewEvent/{id}', [userreservationController::class,'viewEvent'])->name('viewEvent');
 Route::post('/addEvent', [userreservationController::class,'addEvent'])->name('addEvent');
 
+
 Route::get('', [landingpageController::class,'index']);
 Route::get('/', [v2landingpageController::class,'index']);

@@ -382,11 +382,11 @@ Please don't hesitate to get in touch with us if you have any queries or would w
                                     </div>
                                     <div class="form-group" style="width:35%;padding:2%;float:left;">
                                         <label for="message-text" class="col-form-label"><i class="fa fa-phone" style="color:#1795CE"></i>Contact:</label>
-                                        <input name="contact"  type="number" min="0" max="11"  maxlength="11"  class="form-control shadow" placeholder ="09x-xxx-xxxx" id="contact" required>
+                                        <input name="contact"  type="number" min="0"   maxlength="11"  class="form-control shadow" placeholder ="09x-xxx-xxxx" id="contact" required>
                                     </div>
                                     <div class="form-group" style="width:35%;padding:2%;float:left;">
                                         <label for="message-text" class="col-form-label"><i class="fa fa-phone" style="color:#1795CE"></i>Alternate Number:</label>
-                                        <input name="alternate"  type="number" min="0" max="11" maxlength="11"  class="form-control shadow" placeholder ="09x-xxx-xxxx" id="alternate" required>
+                                        <input name="alternate"  type="number" min="0"  maxlength="11"  class="form-control shadow" placeholder ="09x-xxx-xxxx" id="alternate" required>
                                    
                                     </div>
                     
@@ -412,6 +412,8 @@ Please don't hesitate to get in touch with us if you have any queries or would w
                                                       </div>
                                                          @endif
                                                 @endforeach
+                                                <label for="services" style="display:table-cell; width:1px">Other?</label>
+                                                 <input type="text" id="flexCheckfault" class="form-control shadow"  style="display:table-cell; width:50%" />
                                           
                                                
 
@@ -429,7 +431,7 @@ Please don't hesitate to get in touch with us if you have any queries or would w
                                                 <div class="form-check" >
                                                    <input name="Other_Services[]" value="{{$ev->id}}"  class="form-check-input" type="checkbox"  id="flexCheckDefault">
                                                    <label class="form-check-label" for="flexCheckDefault">
-                                                      {{$ev->event_title}}:<span>&#8369; {{$ev->event_price}}</span>
+                                                      {{$ev->event_title}}:<span>&#8369; {{$ev->event_price}}</span>                                                                                                                
                                                    </label>
                                                 </div>
                                                 
@@ -437,7 +439,7 @@ Please don't hesitate to get in touch with us if you have any queries or would w
                                              @endif
                                           @endforeach
                                           <label for="services" style="display:table-cell; width:1px">Other?</label>
-                                                 <input type="text" id="flexCheckfault" style="display:table-cell; width:50%" />
+                                                 <input type="text" id="flexCheckfault" class="form-control shadow"  style="display:table-cell; width:50%" />
                                     </div>
                                    
                                        <br>
