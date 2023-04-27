@@ -382,14 +382,19 @@ Please don't hesitate to get in touch with us if you have any queries or would w
                                     </div>
                                     <div class="form-group" style="width:35%;padding:2%;float:left;">
                                         <label for="message-text" class="col-form-label"><i class="fa fa-phone" style="color:#1795CE"></i>Contact:</label>
-                                        <input name="contact"  type="number" min="0"   maxlength="11"  class="form-control shadow" placeholder ="09x-xxx-xxxx" id="contact" required>
+                                        <input name="contact"  type="number" min="0"   maxlength="11"  class="form-control shadow" placeholder ="+63 xx-xxx-xxxx" id="contact" required>
                                     </div>
                                     <div class="form-group" style="width:35%;padding:2%;float:left;">
                                         <label for="message-text" class="col-form-label"><i class="fa fa-phone" style="color:#1795CE"></i>Alternate Number:</label>
-                                        <input name="alternate"  type="number" min="0"  maxlength="11"  class="form-control shadow" placeholder ="09x-xxx-xxxx" id="alternate" required>
-                                   
+                                        <input name="alternate"  type="number" min="0"  maxlength="11"  class="form-control shadow" placeholder ="+63 xx-xxx-xxxx" id="alternate" required>
                                     </div>
-                    
+
+<!-- 
+                                    <div class="form-group" style="width:35%;padding:2%;float:left;">
+                                        <label for="message-text" class="col-form-label"><i class="fa fa-list-alt" style="color:#1795CE"></i>Others:</label>
+                                        <input name="alternate"  type="number" min="0"  maxlength="11"  class="form-control shadow" placeholder ="Others" id="alternate" required>
+                                    </div> -->
+                             
                                     
                                     <div class="form-group" style="width:30%;padding:2%;float:left;">
                                         <label for="message-text" class="col-form-label"><i class="fa fa-calendar" style="color:#1795CE" aria-hidden="true"></i>Date of Event:</label>
@@ -414,6 +419,12 @@ Please don't hesitate to get in touch with us if you have any queries or would w
                                                 @endforeach
                                                 <label for="services" style="display:table-cell; width:1px">Other?</label>
                                                  <input type="text" id="flexCheckfault" class="form-control shadow"  style="display:table-cell; width:50%" />
+                                                 <div class="form-group" style="width:35%;padding:2%;float:left;">
+
+
+                                        <!-- <label for="message-text" class="col-form-label"><i class="fa fa-list-alt" style="color:#1795CE"></i>Others:</label>
+                                        <input name="alternate"  type="text" min="0"  maxlength="11"  class="form-control shadow" placeholder ="Others" id="alternate" required> -->
+                                    </div>
                                           
                                                
 
@@ -438,7 +449,7 @@ Please don't hesitate to get in touch with us if you have any queries or would w
 
                                              @endif
                                           @endforeach
-                                          <label for="services" style="display:table-cell; width:1px">Other?</label>
+                                          <label for="services" style="display:table-cell; width:1px"><i class="fa fa-list-alt" style="color:#1795CE"></i>Other?</label>
                                                  <input type="text" id="flexCheckfault" class="form-control shadow"  style="display:table-cell; width:50%" />
                                     </div>
                                    
