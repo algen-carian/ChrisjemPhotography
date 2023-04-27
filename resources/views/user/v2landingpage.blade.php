@@ -112,7 +112,7 @@
          }, 5000);
       </script>
                         <h1 class="mx-auto my-0 text-uppercase">Picxellence</h1>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5 text-align-center">Book for a special occasion.</h2>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5 text-align-center">Book for a Special Occasion.</h2>
 						
 						
                         <!-- <a class="btn btn-primary" href="#about"  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" id="reservenow">
@@ -366,31 +366,33 @@ Please don't hesitate to get in touch with us if you have any queries or would w
                                  @csrf  
 
                                     <div class="form-group">
-                                        <label for="message-text" class="col-form-label">Name:</label><br>
+                                        <label for="message-text" class="col-form-label"><i class="fa fa-user" style="color:#1795CE"></i>Name:</label><br>
                                         <input name="fname"  class="form-control shadow" id="fname" style="width:30%;margin-right:5%;float:left;" placeholder="First name"  required>
                                         <input name="mname"  class="form-control shadow" id="mname" style="width:30%;margin-right:5%;float:left;" placeholder="Middle name">
                                         <input name="lname"  class="form-control shadow" id="lname" style="width:30%;float:left;" placeholder="Last name"  required>
                                     </div>
                                     <br>
                                     <div class="form-group" style="width:50%;padding:2%;float:left;">
-                                        <label for="message-text" class="col-form-label">Email:</label>
+                                        <label for="message-text" class="col-form-label"><i class="fa fa-envelope" style="color:#1795CE"></i>Email:</label>
                                         <input name="email"  class="form-control shadow" id="email" placeholder ="sample@gmail.com"   required>
                                     </div>
                                     <div class="form-group" style="width:50%;padding:2%;float:left;">
-                                        <label for="message-text" class="col-form-label">Location:</label>
+                                        <label for="message-text" class="col-form-label"><i class="fa fa-address-card" style="color:#1795CE"></i>Location:</label>
                                         <input name="Address"  class="form-control shadow" id="Address" placeholder ="Location" required>
                                     </div>
                                     <div class="form-group" style="width:35%;padding:2%;float:left;">
-                                        <label for="message-text" class="col-form-label">Contact:</label>
-                                        <input name="contact"  type="number" class="form-control shadow" placeholder ="09x-xxx-xxxx" id="contact" required>
+                                        <label for="message-text" class="col-form-label"><i class="fa fa-phone" style="color:#1795CE"></i>Contact:</label>
+                                        <input name="contact"  type="number" min="0" max="11"  maxlength="11"  class="form-control shadow" placeholder ="09x-xxx-xxxx" id="contact" required>
                                     </div>
                                     <div class="form-group" style="width:35%;padding:2%;float:left;">
-                                        <label for="message-text" class="col-form-label">Alternate Number:</label>
-                                        <input name="alternate"  type="number" class="form-control shadow" placeholder ="09x-xxx-xxxx" id="alternate" required>
+                                        <label for="message-text" class="col-form-label"><i class="fa fa-phone" style="color:#1795CE"></i>Alternate Number:</label>
+                                        <input name="alternate"  type="number" min="0" max="11" maxlength="11"  class="form-control shadow" placeholder ="09x-xxx-xxxx" id="alternate" required>
+                                   
                                     </div>
+                    
                                     
                                     <div class="form-group" style="width:30%;padding:2%;float:left;">
-                                        <label for="message-text" class="col-form-label">Date of Event:</label>
+                                        <label for="message-text" class="col-form-label"><i class="fa fa-calendar" style="color:#1795CE" aria-hidden="true"></i>Date of Event:</label>
                                         <input name="Event"  class="form-control shadow"  placeholder ="MM/DD/YY."id="datepicker" autocomplete="off"  required >
                                     </div>    
                                       
@@ -404,13 +406,14 @@ Please don't hesitate to get in touch with us if you have any queries or would w
                                                       <div class="form-check" >
                                                          <input name="Services[]" value="{{$ev->id}}" class="form-check-input" type="checkbox"  id="flexCheckDefault">
                                                          <label class="form-check-label" for="flexCheckDefault">
-                                                               {{$ev->event_title}}:{{$ev->event_price}}
+                                                               {{$ev->event_title}}: <span>&#8369; {{$ev->event_price}}</span>
+                                                                                                  
                                                          </label>
                                                       </div>
                                                          @endif
                                                 @endforeach
                                           
-                                       
+                                               
 
                                              <br><br>
 
@@ -418,7 +421,7 @@ Please don't hesitate to get in touch with us if you have any queries or would w
 
                                     <div class="form-group" style="width:50%;padding:2%;float:left;">
 
-                                          <label for="Services" >Other Services:</label>
+                                          <label for="Services" >Services:</label>
 
                                           @foreach($Events as $ev)
                                              @if($ev->event_content == "Services")
@@ -426,16 +429,20 @@ Please don't hesitate to get in touch with us if you have any queries or would w
                                                 <div class="form-check" >
                                                    <input name="Other_Services[]" value="{{$ev->id}}"  class="form-check-input" type="checkbox"  id="flexCheckDefault">
                                                    <label class="form-check-label" for="flexCheckDefault">
-                                                      {{$ev->event_title}}:{{$ev->event_price}}
+                                                      {{$ev->event_title}}:<span>&#8369; {{$ev->event_price}}</span>
                                                    </label>
                                                 </div>
+                                                
 
                                              @endif
                                           @endforeach
+                                          <label for="services" style="display:table-cell; width:1px">Other?</label>
+                                                 <input type="text" id="flexCheckfault" style="display:table-cell; width:50%" />
                                     </div>
+                                   
                                        <br>
                                        <br>
-                                    <div class="modal-footer" style="width:50%;padding:2%;float:left;">
+                                    <div class="modal-footer" style="width:50%;padding:2%;float:right;">
                                           <button type="button"  class="btn btn-secondary" data-dismiss="modal">Close</button>
                                           <button type="submit"  class="btn btn-primary">Send message</button>
                                     </div>      
@@ -493,6 +500,9 @@ Please don't hesitate to get in touch with us if you have any queries or would w
             });         
          });   
 
+
+
+
 // var d = new Date();
 // var hours = d.getHours();
 // var minutes = d.getMinutes();
@@ -536,6 +546,17 @@ Please don't hesitate to get in touch with us if you have any queries or would w
    
 // });   
       </script>
+
+
+
+<script>
+        //  select all input type numbers
+     document.querySelectorAll('input[type="number"]').forEach(input =>{
+        input.oninput = () =>{
+            if(input.value.length > input.maxLength) input.value = input.value.slice(0, input.maxLength);
+        };
+     });
+</script>
 
 
 <!-- PWA -->

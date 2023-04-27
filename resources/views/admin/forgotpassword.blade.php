@@ -24,7 +24,7 @@
                     <!-------Image-------->
                     <img src="assets/picxellence.png" alt="LOGO">
                     <div class="text">
-                        <p>Photography and Videography  Online Reservation System <i>- picxellence</i></p>
+                        <p>Hello Admin! <i>- you can Change password to Recorver account. </i></p>
                     </div>
                 </div>
                 <div class="col-md-6 right">

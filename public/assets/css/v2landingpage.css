@@ -11802,3 +11802,6 @@ button, [type=button], [type=reset], [type=submit] {
   -webkit-appearance: button;
   border-color: powderblue;
 }
+span {
+  content: "\20B1";
+}

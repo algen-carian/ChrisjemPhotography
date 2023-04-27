@@ -36,7 +36,7 @@
                     <!-------Image-------->
                     <img src="assets/picxellence.png" alt="LOGO">
                     <div class="text">
-                        <p>Photography and Videography  Online Reservation System <i> - picxellence</i></p>
+                        <p>Welcome back! <i>- you can sign in to access with your existing account. </i></p>
                     </div>
                 </div>
                 <div class="col-md-6 right">
