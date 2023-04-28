@@ -101,11 +101,11 @@ class userreservationController extends Controller
                         function ($message) use ($email) {
                             $message->from($address = 'chrisjemphotography123@gmail.com', $name = "Photography Picxellence");
                             $message->to($email, 'recipient')
-                                ->subject('Your reservation has been approved');
+                                ->subject('Your reservation has been Pending');
                         }
                     );
 
-                    return back()->with('Success','Reserve successfuly !, Please check your email for confirmation.');
+                    return back()->with('Success','Reserve successfully !, Please check your email for confirmation.');
                
             }else{
     
