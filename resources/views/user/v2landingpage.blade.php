@@ -366,26 +366,26 @@ Please don't hesitate to get in touch with us if you have any queries or would w
                                  @csrf  
 
                                     <div class="form-group">
-                                        <label for="message-text" class="col-form-label"><i class="fa fa-user" style="color:#1795CE"></i>Name:</label><br>
+                                        <label for="message-text" class="col-form-label"><i class="fa fa-user" style="color:#1795CE"></i> Name:</label><br>
                                         <input name="fname"  class="form-control shadow" id="fname" style="width:30%;margin-right:5%;float:left;" placeholder="First name"  required>
                                         <input name="mname"  class="form-control shadow" id="mname" style="width:30%;margin-right:5%;float:left;" placeholder="Middle name">
                                         <input name="lname"  class="form-control shadow" id="lname" style="width:30%;float:left;" placeholder="Last name"  required>
                                     </div>
                                     <br>
                                     <div class="form-group" style="width:50%;padding:2%;float:left;">
-                                        <label for="message-text" class="col-form-label"><i class="fa fa-envelope" style="color:#1795CE"></i>Email:</label>
+                                        <label for="message-text" class="col-form-label"><i class="fa fa-envelope" style="color:#1795CE"></i> Email:</label>
                                         <input name="email"  class="form-control shadow" id="email" placeholder ="sample@gmail.com"   required>
                                     </div>
                                     <div class="form-group" style="width:50%;padding:2%;float:left;">
-                                        <label for="message-text" class="col-form-label"><i class="fa fa-address-card" style="color:#1795CE"></i>Location:</label>
+                                        <label for="message-text" class="col-form-label"><i class="fa fa-address-card" style="color:#1795CE"></i> Location:</label>
                                         <input name="Address"  class="form-control shadow" id="Address" placeholder ="Location" required>
                                     </div>
                                     <div class="form-group" style="width:35%;padding:2%;float:left;">
-                                        <label for="message-text" class="col-form-label"><i class="fa fa-phone" style="color:#1795CE"></i>Contact:</label>
+                                        <label for="message-text" class="col-form-label"><i class="fa fa-phone" style="color:#1795CE"></i> Contact:</label>
                                         <input name="contact"  type="number" min="0"   maxlength="11"  class="form-control shadow" placeholder ="+63 xx-xxx-xxxx" id="contact" required>
                                     </div>
-                                    <div class="form-group" style="width:35%;padding:2%;float:left;">
-                                        <label for="message-text" class="col-form-label"><i class="fa fa-phone" style="color:#1795CE"></i>Alternate Number:</label>
+                                    <div class="form-group" style="width:35%;padding:2%;float:left;"> 
+                                        <label for="message-text" class="col-form-label"><i class="fa fa-phone" style="color:#1795CE"></i> Alternate Number:</label>
                                         <input name="alternate"  type="number" min="0"  maxlength="11"  class="form-control shadow" placeholder ="+63 xx-xxx-xxxx" id="alternate" required>
                                     </div>
 
@@ -397,7 +397,7 @@ Please don't hesitate to get in touch with us if you have any queries or would w
                              
                                     
                                     <div class="form-group" style="width:30%;padding:2%;float:left;">
-                                        <label for="message-text" class="col-form-label"><i class="fa fa-calendar" style="color:#1795CE" aria-hidden="true"></i>Date of Event:</label>
+                                        <label for="message-text" class="col-form-label"><i class="	fas fa-calendar-alt" style="color:#1795CE" aria-hidden="true"></i> Date of Event:</label>
                                         <input name="Event"  class="form-control shadow"  placeholder ="MM/DD/YY."id="datepicker" autocomplete="off"  required >
                                     </div>    
                                       
@@ -417,8 +417,8 @@ Please don't hesitate to get in touch with us if you have any queries or would w
                                                       </div>
                                                          @endif
                                                 @endforeach
-                                                <label for="services" style="display:table-cell; width:1px">Other?</label>
-                                                 <input type="text" id="flexCheckfault" class="form-control shadow"  style="display:table-cell; width:50%" />
+                                                <label for="services" style="display:table-cell; width:1px"><i class="fas fa-calendar-check" style="color:#1795CE"></i>Other?</label>
+                                                 <input type="text" id="flexCheckfault" class="form-control shadow"  style="display:table-cell; width:50%"/>
                                                  <div class="form-group" style="width:35%;padding:2%;float:left;">
 
 
@@ -449,7 +449,7 @@ Please don't hesitate to get in touch with us if you have any queries or would w
 
                                              @endif
                                           @endforeach
-                                          <label for="services" style="display:table-cell; width:1px"><i class="fa fa-list-alt" style="color:#1795CE"></i>Other?</label>
+                                          <label for="services" style="display:table-cell; width:1px"><i class="fas fa-calendar-check" style="color:#1795CE"></i>Other?</label>
                                                  <input type="text" id="flexCheckfault" class="form-control shadow"  style="display:table-cell; width:50%" />
                                     </div>
                                    
