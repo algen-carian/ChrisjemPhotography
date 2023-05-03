@@ -418,6 +418,13 @@ Please don't hesitate to get in touch with us if you have any queries or would w
                                                          @endif
                                                 @endforeach
                                                 <label for="services" style="display:table-cell; width:1px"><i class="fas fa-calendar-check" style="color:#1795CE"></i>Other?</label>
+                                                 <!-- <select name="Services" id="services">
+                                                                    <optgroup label="Suggested your Event & Services">
+                                                                    <option value="Event"></option>
+                                                                    <option value="Event">Event</option>
+                                                                    <option value="Services">Services</option>
+                                                                    </optgroup>                                                                  
+                                                                </select> -->
                                                  <input type="text" id="flexCheckfault" class="form-control shadow"  style="display:table-cell; width:50%"/>
                                                  <div class="form-group" style="width:35%;padding:2%;float:left;">
 
