@@ -411,13 +411,13 @@ Please don't hesitate to get in touch with us if you have any queries or would w
                                                       <div class="form-check" >
                                                          <input name="Services[]" value="{{$ev->id}}" class="form-check-input" type="checkbox"  id="flexCheckDefault">
                                                          <label class="form-check-label" for="flexCheckDefault">
-                                                               {{$ev->event_title}}: <span>&#8369; {{$ev->event_price}}</span>
+                                                               {{$ev->event_title}}: <span>&#8369;{{$ev->event_price}}</span>
                                                                                                   
                                                          </label>
                                                       </div>
                                                          @endif
                                                 @endforeach
-                                                <label for="services" style="display:table-cell; width:1px"><i class="fas fa-calendar-check" style="color:#1795CE"></i>Other?</label>
+                                                <label for="services" style="display:table-cell;"><i class="fas fa-calendar-check" style="color:#1795CE"></i> Other?</label>
                                                  <!-- <select name="Services" id="services">
                                                                     <optgroup label="Suggested your Event & Services">
                                                                     <option value="Event"></option>
@@ -449,14 +449,14 @@ Please don't hesitate to get in touch with us if you have any queries or would w
                                                 <div class="form-check" >
                                                    <input name="Other_Services[]" value="{{$ev->id}}"  class="form-check-input" type="checkbox"  id="flexCheckDefault">
                                                    <label class="form-check-label" for="flexCheckDefault">
-                                                      {{$ev->event_title}}:<span>&#8369; {{$ev->event_price}}</span>                                                                                                                
+                                                      {{$ev->event_title}}:<span>&#8369;{{$ev->event_price}}</span>                                                                                                                
                                                    </label>
                                                 </div>
                                                 
 
                                              @endif
                                           @endforeach
-                                          <label for="services" style="display:table-cell; width:1px"><i class="fas fa-calendar-check" style="color:#1795CE"></i>Other?</label>
+                                          <label for="services" style="display:table-cell;"><i class="fas fa-calendar-check" style="color:#1795CE"></i> Other?</label>
                                                  <input type="text" id="flexCheckfault" class="form-control shadow"  style="display:table-cell; width:50%" />
                                     </div>
                                    

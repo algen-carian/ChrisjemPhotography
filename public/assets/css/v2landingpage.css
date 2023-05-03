@@ -3079,7 +3079,10 @@ textarea.form-control-lg {
 }
 .btn-primary {
   color: #fff;
-  background-color: #1795ce;
+  width: 50%;
+  cursor: pointer;
+    margin: 4px 2px;
+  background-color: #2ac41c;
   border-color: #1795ce;
   filter: none;
   opacity: 0.65;
