@@ -3079,10 +3079,7 @@ textarea.form-control-lg {
 }
 .btn-primary {
   color: #fff;
-  width: 50%;
-  cursor: pointer;
-    margin: 4px 2px;
-  background-color: #2ac41c;
+  background-color: #1795ce;
   border-color: #1795ce;
   filter: none;
   opacity: 0.65;
@@ -11783,6 +11780,7 @@ body {
 }
 
 .alertSaKanto{
+
   color:blue; 
   background-color:#cfffe6; 
   border-color:#0dcaf0;  
@@ -11792,6 +11790,7 @@ body {
   text-align:center; 
   font-size:20px; 
   position:absolute;
+  /* position: absolute; */
 }
 
 /* .aboutusfooter a{
@@ -11804,7 +11803,4 @@ body {
 button, [type=button], [type=reset], [type=submit] {
   -webkit-appearance: button;
   border-color: powderblue;
-}
-span {
-  content: "\20B1";
 }
