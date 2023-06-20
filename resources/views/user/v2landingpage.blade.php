@@ -254,7 +254,7 @@ Please don't hesitate to get in touch with us if you have any queries or would w
        <div class="video-wrapper">
         <video class="w-100" autoplay loop muted>
 
-            <source src="assets/" type="video/mp4" />
+            <source src="public/assets/intro.mp4" type="video/mp4" />
           </video>
       </div>
       
@@ -410,7 +410,7 @@ Please don't hesitate to get in touch with us if you have any queries or would w
          
                                                       <div class="form-check" >
                                                          <input name="Services[]" value="{{$ev->id}}" class="form-check-input" type="checkbox"  id="flexCheckDefault">
-                                                         <label class="form-check-label" for="flexCheckDefault">
+                                                         <label class="form-check-label" for="flexCheckDefault"> 
                                                                {{$ev->event_title}}: <span>&#8369;{{$ev->event_price}}</span>
                                                                                                   
                                                          </label>
@@ -418,7 +418,7 @@ Please don't hesitate to get in touch with us if you have any queries or would w
                                                          @endif
                                                 @endforeach
                                                 <label for="services" style="display:table-cell;"><i class="fas fa-calendar-check" style="color:#1795CE"></i> Other?</label>
-                                                        <input type="text" name="event_desc" placeholder="Description" id="flexCheckDefault" class="form-control shadow"  style="display:table-cell; width:50%" />
+                                                        <input type="text" name="event_desc" placeholder="Description - Event" id="flexCheckDefault" class="form-control shadow"  style="display:table-cell; width:50%" />
                                                   <div class="form-group" style="width:35%;padding:2%;float:left;">
 
 
@@ -450,7 +450,7 @@ Please don't hesitate to get in touch with us if you have any queries or would w
                                              @endif
                                           @endforeach
                                           <label for="services" style="display:table-cell;"><i class="fas fa-calendar-check" style="color:#1795CE"></i> Other?</label>
-                                                 <input type="text" name="service_desc" placeholder="Description" id="flexCheckDefault" class="form-control shadow"  style="display:table-cell; width:50%" />
+                                                 <input type="text" name="service_desc" placeholder="Description - Services" id="flexCheckDefault" class="form-control shadow"  style="display:table-cell; width:50%" />
                                     </div>
                                    
                                        <br>

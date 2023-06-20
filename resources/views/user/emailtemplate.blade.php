@@ -7,7 +7,7 @@
     <style> @import url('https://fonts.googleapis.com/css?family=Open+Sans');
   </style>
 <center>
-<img src="assets/img/anniv.jpg" alt="Logo" title="Logo" style="display:block" width="200" height="87" />
+<img src="../public/assets/picxellence.png" alt="Logo" title="Logo" style="display:block" width="200" height="87" />
 </center>   
   <table align="center" bgcolor="#EAECED" border="0" cellpadding="0" cellspacing="0" width="100%">
     <tbody>
@@ -49,7 +49,7 @@
                                     <tbody>
                                         <tr>
                                             <td>&nbsp;
-                                            <img src="../../../public/assets/picxellence.png" alt="logo" style="height: 50px;">
+                                            <!-- <img src="../../../public/assets/picxellence.png" alt="logo" style="height: 50px;"> -->
                                            <!-- src: url('../../../public/assets/picxellence.png'); -->
                                             </td>
                                         </tr>

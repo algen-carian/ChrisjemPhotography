@@ -185,6 +185,13 @@
                                       <br>
                                   @endforeach
                               </div>
+                              <!-- <div>
+                                  <label for="DoR">Other:</label>
+                                  @foreach($Events as $ev)
+                                      <input  class="form-control" name="service" type="text" value="{{$serv->Service}}" readonly>
+                                      <br>
+                                  @endforeach
+                              </div> -->
                           </div>
                       </div>                    
                     </div>
