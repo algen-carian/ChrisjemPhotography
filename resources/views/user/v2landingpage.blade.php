@@ -404,7 +404,7 @@ Please don't hesitate to get in touch with us if you have any queries or would w
                                     <div class="form-group" style="width:50%;padding:2%;float:left;">
                                  
                                       
-                                          <label for="Services" >Events:</label>
+                                          <label for="Services" ><i class=" fas fa-camera-alt" style="color:#1795CE" aria-hidden="true"></i> Events:</label>
                                                 @foreach($Events as $ev)
                                                    @if($ev->event_content == "Event")
          
@@ -418,15 +418,8 @@ Please don't hesitate to get in touch with us if you have any queries or would w
                                                          @endif
                                                 @endforeach
                                                 <label for="services" style="display:table-cell;"><i class="fas fa-calendar-check" style="color:#1795CE"></i> Other?</label>
-                                                 <!-- <select name="Services" id="services">
-                                                                    <optgroup label="Suggested your Event & Services">
-                                                                    <option value="Event"></option>
-                                                                    <option value="Event">Event</option>
-                                                                    <option value="Services">Services</option>
-                                                                    </optgroup>                                                                  
-                                                                </select> -->
-                                                 <input type="text" id="flexCheckfault" class="form-control shadow"  style="display:table-cell; width:50%"/>
-                                                 <div class="form-group" style="width:35%;padding:2%;float:left;">
+                                                        <input type="text" name="event_desc" placeholder="Description" id="flexCheckDefault" class="form-control shadow"  style="display:table-cell; width:50%" />
+                                                  <div class="form-group" style="width:35%;padding:2%;float:left;">
 
 
                                         <!-- <label for="message-text" class="col-form-label"><i class="fa fa-list-alt" style="color:#1795CE"></i>Others:</label>
@@ -441,7 +434,7 @@ Please don't hesitate to get in touch with us if you have any queries or would w
 
                                     <div class="form-group" style="width:50%;padding:2%;float:left;">
 
-                                          <label for="Services" >Services:</label>
+                                          <label for="Services" ><i class=" fas fa-copy" style="color:#1795CE" aria-hidden="true"></i> Services:</label>
 
                                           @foreach($Events as $ev)
                                              @if($ev->event_content == "Services")
@@ -449,7 +442,7 @@ Please don't hesitate to get in touch with us if you have any queries or would w
                                                 <div class="form-check" >
                                                    <input name="Other_Services[]" value="{{$ev->id}}"  class="form-check-input" type="checkbox"  id="flexCheckDefault">
                                                    <label class="form-check-label" for="flexCheckDefault">
-                                                      {{$ev->event_title}}:<span>&#8369;{{$ev->event_price}}</span>                                                                                                                
+                                                      {{$ev->event_title}}: <span>&#8369;{{$ev->event_price}}</span>                                                                                                                
                                                    </label>
                                                 </div>
                                                 
@@ -457,7 +450,7 @@ Please don't hesitate to get in touch with us if you have any queries or would w
                                              @endif
                                           @endforeach
                                           <label for="services" style="display:table-cell;"><i class="fas fa-calendar-check" style="color:#1795CE"></i> Other?</label>
-                                                 <input type="text" id="flexCheckfault" class="form-control shadow"  style="display:table-cell; width:50%" />
+                                                 <input type="text" name="service_desc" placeholder="Description" id="flexCheckDefault" class="form-control shadow"  style="display:table-cell; width:50%" />
                                     </div>
                                    
                                        <br>
@@ -500,22 +493,23 @@ Please don't hesitate to get in touch with us if you have any queries or would w
             reserve.forEach(element => {
                disabledDates.push(element.Event_date);
             });
-            console.log(disabledDates);
+            console.log('data'+disabledDates);
          };
 
 
         $(function() {
 
          var currentDate = new Date();
+         var nextMonth = new Date();
 
+        // Add 30 days to the current date
+        nextMonth.setDate(currentDate.getDate() + 30);
+    
             $("#datepicker").datepicker({
                 
                beforeShowDay: function(date) {
-                if(currentDate==date){
-
-                }
                   let formattedDate = $.datepicker.formatDate("yy-mm-dd", date);
-                  return [disabledDates.indexOf(formattedDate) == -1 && date >= currentDate];
+                  return [disabledDates.indexOf(formattedDate) == -1 && date >= nextMonth];
                }
             });         
          });   

@@ -163,7 +163,10 @@
                               <div class="input-field">
         
                                   <input  class="form-control" name="DoR" type="text" value="" readonly>
-                                  <label for="DoR">Date of Reservation: {{$ev->created_at}}</label>
+                                  <label for="DoR">Date of Reservation: 
+                                    {{   $ev->created_at }}
+                                   
+                                    </label>
                               </div>
                                @endforeach   	
                                     

@@ -44,8 +44,12 @@ class userreservationController extends Controller
 
             $lastId = $reservation->id;
             
-
-            if($request->input('Services')){
+            // event_title
+            // event_desc
+            // service_title
+            // service_desc
+            
+            if($request['Services'] != null &&  count($request['Services']) != 0){
                 foreach ($request->input('Services') as $key) {
                     $id = event::find($key);
     
@@ -59,22 +63,43 @@ class userreservationController extends Controller
     
                 }
             }
+            if( $request['event_desc'] != null ) {
+                
+                $event = new r_event();
+    
+                $event->reservation_id = $lastId;
+                $event->event_id = 26;
+                $event->Type = "Event";
+                $event->Service  = $request['event_desc'];                
+                $event->save();
 
-            if($request->input('Other_Services') !== null){
-                foreach ($request->input('Other_Services') as $key) {
-                    $id = event::find($key);
-    
-                    $event = new r_event();
-    
-                    $event->reservation_id  = $lastId;
-                    $event->event_id = $id->id;
-                    $event->Type = "Service";
-                    $event->Service  = $id->event_title;                
-                    $event->save();
-    
+            }
+            if($request['Other_Services'] != null &&  count($request['Other_Services']) != 0){
+                if($request->input('Other_Services') !== null){
+                    foreach ($request->input('Other_Services') as $key) {
+                        $id = event::find($key);
+        
+                        $event = new r_event();
+        
+                        $event->reservation_id  = $lastId;
+                        $event->event_id = $id->id;
+                        $event->Type = "Service";
+                        $event->Service  = $id->event_title;                
+                        $event->save();
+        
+                    }
                 }
             }
-            
+            if( $request['service_desc'] != null ) {
+                $event = new r_event();
+        
+                $event->reservation_id  = $lastId;
+                $event->event_id = 26;
+                $event->Type = "Service";   
+                $event->Service  = $request['service_desc'];                
+                $event->save();
+            }
+
             $mail_data = [
                 'recipient' => 'ggmelmark@gmail.com',
                 'fromEmail' => 'ggmelmark@gmail.com',
