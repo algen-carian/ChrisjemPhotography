@@ -136,10 +136,10 @@
                             <td>{{$ev->email}}</td>
                             <td>
                                 @if($ev->event_status == "Canceled")
-                                    <p style="color:red;">{{$ev->event_status}}</p>
+                                    <p style="color:red;">Cancelled</p>
                                 @endif
-                                @if($ev->event_status == "Finish")
-                                    <p style="color:green;">{{$ev->event_status}}</p>
+                                @if($ev->event_status == "finish" ||$ev->event_status == "Finish" )
+                                    <p style="color:green;">Successfully</p>
                                 @endif
                             </td>
                             <td>{{$ev->Event_date}}</td>
