@@ -143,7 +143,7 @@ Route::get('/admindashboard',[admindashboardController::class, 'index']);
 //ADMINHISTORY
 Route::get('/adminhistory',[adminhistoryController::class, 'index']);
 
-//ADMINHISTORY
+//ADMINHISTORYSORT
 Route::get('/adminhistorysort',[adminhistoryController::class, 'adminhistorysort'])->name('adminhistorysort');
 
 

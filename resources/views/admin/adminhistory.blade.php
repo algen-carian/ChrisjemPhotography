@@ -121,16 +121,16 @@
                     <thead class="thead-dark">
                             <th scope="col">#</th>
                             <th scope="col">
-                                <a href="{{ route('adminhistorysort', ['sort' => 'fname']) }}">Name</a>
+                                <a href="{{ route('adminhistorysort', ['sort' => 'fname']) }}" style="color: black;" >Name</a>
                             </th>
                             <th scope="col">
-                                <a href="{{ route('adminhistorysort', ['sort' => 'email']) }}">Email</a>
+                                <a href="{{ route('adminhistorysort', ['sort' => 'email']) }}" style="color: black;" >Email</a>
                             </th>
                             <th scope="col">
-                                <a href="{{ route('adminhistorysort', ['sort' => 'event_status']) }}">Status</a>
+                                <a href="{{ route('adminhistorysort', ['sort' => 'event_status']) }}" style="color: black;" >Status</a>
                             </th>
                             <th scope="col">
-                                <a href="{{ route('adminhistorysort', ['sort' => 'event_date']) }}">Event Date</a>
+                                <a href="{{ route('adminhistorysort', ['sort' => 'event_date']) }}" style="color: black;" >Event Date</a>
                             </th>
                             <th scope="col">Action</th>
                     
