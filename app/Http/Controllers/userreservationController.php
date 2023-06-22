@@ -147,7 +147,7 @@ class userreservationController extends Controller
     
         // dd($event->email);
         if ($event->event_status == "Approved") {
-            $event->event_status = 'Finish';
+            $event->event_status = 'finish';
         }else{
             $event->event_status = 'Approved';
 

@@ -58,9 +58,14 @@
                             </form>   
     
 
-                            <div class="signin">
+                            <!-- <div class="signin">
                                 <span>Forgot Password? <a href="forgotpassword">Click here</a></span>
+                            </div> -->
+
+                            <div class="signin">
+                                <span>Go back to Landingpage? <a href="/">Click here</a></span>
                             </div>
+
                      </div>
                 </div>
             </div>

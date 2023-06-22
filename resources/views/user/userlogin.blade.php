@@ -69,7 +69,8 @@
                   <input name="submit" id="login" class="btn btn-block login-btn " type="submit" value="Login">
 
                   <div id="formFooter">
-                          <a class="underlineHover" href="adminforgotpassword">Forgot Password?</a>
+                           
+                  <a class="underlineHover" href="adminforgotpassword">Forgot Password?</a>
                   </div>
                   <!-- <a class="back" href="/"> Back to website</a> -->
                 </center>

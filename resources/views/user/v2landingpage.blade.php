@@ -161,17 +161,17 @@ Please don't hesitate to get in touch with us if you have any queries or would w
             <div class="container px-4 px-lg-5">
                 <!-- Featured Project Row-->
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/wedding.jpg" alt="..." /></div>
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/wedding7 2.png" alt="..." /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Wedding</h4>
-                            <p class="text-black-50 mb-0 ">Your inspiration is better if it comes from many different sources, and your sensibilities will transform all those influences and inspiration into your own visual world. It’s like reading a book instead of watching a movie.</p>
+                            <p class="text-black-150 mb-0 ">Your inspiration is better if it comes from many different sources, and your sensibilities will transform all those influences and inspiration into your own visual world. It’s like reading a book instead of watching a movie.</p>
                         </div>
                     </div>
                 </div>
                 <!-- Project One Row-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/birthday.webp" alt="..." /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/birthday1 .png" alt="..." /></div>
                     <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
@@ -186,7 +186,7 @@ Please don't hesitate to get in touch with us if you have any queries or would w
                 </div>
                 <!-- Project Two Row-->
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/debut.jpg" alt="..." /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/debut2.png" alt="..." /></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
@@ -201,7 +201,7 @@ Please don't hesitate to get in touch with us if you have any queries or would w
                 </div>
                 <!-- PRoject three ROw-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/christ.jpg" alt="..." /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/chiristening1.png" alt="..." /></div>
                     <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
@@ -216,7 +216,7 @@ Please don't hesitate to get in touch with us if you have any queries or would w
                 </div>
                 <!-- Project four Row -->
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/anniv.jpg" alt="..." /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/anniversary1.png" alt="..." /></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
@@ -231,13 +231,13 @@ Please don't hesitate to get in touch with us if you have any queries or would w
                 </div>
                 <!-- PRoject five ROw-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/teamB1.jpg" alt="..." /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/summerCamp 1.png" alt="..." /></div>
                     <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
                                     <h4 class="text-white">Team Building</h4>
-                                    <p class="mb-0 text-white-50">Great teams do not hold back with one another. They are unafraid to air their dirty laundry. They admit their mistakes, their weaknesses, and their concerns without fear of reprisal.” — Patrick Lencioni, American author.</p>
+                                    <p class="mb-0 text-white-50">Great teams do not hold back with one another. At the team-building and ministry camp, we embarked on a journey of self-discovery, unity, and service, leaving us inspired and motivated to make a positive impact in our community.</p>
                                     <hr class="d-none d-lg-block mb-0 ms-0" />
                                 </div>
                             </div>
