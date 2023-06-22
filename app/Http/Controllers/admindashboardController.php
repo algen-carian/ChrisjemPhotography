@@ -9,10 +9,15 @@ use App\Models\r_event;
 use App\Models\event;
 use App\Models\reservation;
 use DB;
+use Illuminate\Support\Facades\Session;
 
 class admindashboardController extends Controller
 {
     public function index(){
+
+       if (Session::get('id') != null) {
+
+
         $Revenue = DB::table('r_events')
         ->join('events', 'r_events.event_id', '=', 'events.id')
         ->select('events.*', 'r_events.*')
@@ -26,6 +31,12 @@ class admindashboardController extends Controller
         $Services = event::select('*')->where('event_content','Services')->count();
         $data = [ $Revenue, $Events, $Reservation, $Services];
       
-        return view('admin.admindashboard',compact('data'));
+        // return view('admin.admindashboard',compact('data'));
+        return "yes";
+       }else{
+        return "No";
+        // return redirect('/');
+       }
+
     }
 }

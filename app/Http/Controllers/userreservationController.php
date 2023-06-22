@@ -8,6 +8,7 @@ use App\Models\r_event;
 use App\Models\event;
 use DB;
 use Illuminate\Support\Facades\Mail as FacadesMail;
+use Illuminate\Support\Facades\Session;
 
 class userreservationController extends Controller
 {
@@ -202,8 +203,11 @@ class userreservationController extends Controller
         $Events = reservation::select('*')->where('id',$id)->get();
         $services = r_event::select('*')->where('reservation_id',$id)->get();
 
-        return view('admin.viewEvent',compact('Events','services'));
-
+        if (Session::get('id')!= null) {
+             return view('admin.viewEvent',compact('Events','services'));
+        }else{
+                return redirect('/');
+            }
     }
 
     public function addEvent(Request $request)
@@ -217,5 +221,7 @@ class userreservationController extends Controller
         $event->save();
 
         return redirect('adminevent');
+        
+
     }
 }

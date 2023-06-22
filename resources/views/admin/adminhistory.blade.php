@@ -119,12 +119,19 @@
                 <h2>History</h2>
                 <table class="">
                     <thead class="thead-dark">
-                    
                             <th scope="col">#</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Email</th>
-                            <th scope="col">Event Date</th>
-                            <th scope="col">Status</th>
+                            <th scope="col">
+                                <a href="{{ route('adminhistorysort', ['sort' => 'fname']) }}">Name</a>
+                            </th>
+                            <th scope="col">
+                                <a href="{{ route('adminhistorysort', ['sort' => 'email']) }}">Email</a>
+                            </th>
+                            <th scope="col">
+                                <a href="{{ route('adminhistorysort', ['sort' => 'event_status']) }}">Status</a>
+                            </th>
+                            <th scope="col">
+                                <a href="{{ route('adminhistorysort', ['sort' => 'event_date']) }}">Event Date</a>
+                            </th>
                             <th scope="col">Action</th>
                     
                     </thead>
@@ -138,7 +145,7 @@
                                 @if($ev->event_status == "Canceled")
                                     <p style="color:red;">Cancelled</p>
                                 @endif
-                                @if($ev->event_status == "finish" ||$ev->event_status == "Finish" )
+                                @if($ev->event_status == "finish" || $ev->event_status == "Finish" )
                                     <p style="color:green;">Successfully</p>
                                 @endif
                             </td>

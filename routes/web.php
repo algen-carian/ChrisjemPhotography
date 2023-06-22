@@ -133,14 +133,24 @@ Route::get('/forgotpassword', function () {
 
 //ADMINLOGIN
 Route::get('/adminAuth',[sidemenuController::class, 'store']);
+//ADMINLOGOUT
+Route::get('/adminlogout',[sidemenuController::class, 'adminlogout'])->name("adminlogout");
 //ADMINSideMenu
 Route::post('/adminlogin',[sidemenuController::class, 'login'])->name("adminlogin");
 //ADMINDASHBOARD
 Route::get('/admindashboard',[admindashboardController::class, 'index']);
+
 //ADMINHISTORY
 Route::get('/adminhistory',[adminhistoryController::class, 'index']);
+
+//ADMINHISTORY
+Route::get('/adminhistorysort',[adminhistoryController::class, 'adminhistorysort'])->name('adminhistorysort');
+
+
 //ADMININVENTORY
 Route::get('/Reservation',[admininventoryController::class, 'index']);
+//sort reservation
+Route::get('/sortreservation',[admininventoryController::class, 'sortreservation'])->name('sortreservation');
 //ADMINPROFILE
 Route::get('/adminprofile',[adminprofileController::class, 'index']);
 //ADMINABOUT
@@ -164,6 +174,7 @@ Route::get('/userdashboard',[userdashboardController::class, 'index']);
 Route::post('/userAuth',[userloginController::class, 'store']);
 //USERRESERVATION
 Route::post('/userreservation',[userreservationController::class, 'index']);
+
 //USERPROFILE
 Route::post('/userprofile',[userprofileController::class, 'index']);
 //USEREVENT

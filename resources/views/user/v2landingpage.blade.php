@@ -489,11 +489,16 @@ Please don't hesitate to get in touch with us if you have any queries or would w
 
          document.getElementById("reservenow").onclick = function() 
          {
-            var reserve = {!! json_encode($reservation) !!};  
+            var reserve = {!! json_encode($reservation) !!};
+            
+            console.log(reserve);
             reserve.forEach(element => {
-               disabledDates.push(element.Event_date);
+                if (element.event_status == "Approved") {
+                    
+                    disabledDates.push(element.Event_date);
+                    console.log('data'+element.event_status+" date:" + element.Event_date );
+                }
             });
-            console.log('data'+disabledDates);
          };
 
 

@@ -126,11 +126,20 @@
                     <thead class="thead-dark">
                         <tr>
                             <th scope="col">#</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Email</th>
-                            <th scope="col">Event Date</th>
-                            <th scope="col">Status</th>
+                            <th scope="col">
+                                <a href="{{ route('sortreservation', ['sort' => 'fname']) }}">Name</a>
+                            </th>
+                            <th scope="col">
+                                <a href="{{ route('sortreservation', ['sort' => 'email']) }}">Email</a>
+                            </th>
+                            <th scope="col">
+                                <a href="{{ route('sortreservation', ['sort' => 'event_date']) }}">Event Date</a>
+                            </th>
+                            <th scope="col">
+                                <a href="{{ route('sortreservation', ['sort' => 'event_status']) }}">Status</a>
+                            </th>
                             <th scope="col" colspan="2">Action</th>
+
                         </tr>
                     </thead>
 

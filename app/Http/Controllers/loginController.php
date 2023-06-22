@@ -17,9 +17,11 @@ class loginController extends Controller
         ]);    
         if (Auth::attempt($request->only('email','password'))){
             if(auth()->user()->is_Admin!=1){
-                return redirect()->intended('admindashboard')->with('message', 'Successfuly Logged In');     
+                return "1";
+                // return redirect()->intended('admindashboard')->with('message', 'Successfully Logged In');     
             }else{
-                return back()->with('status', 'Invalid login details');
+                return "2";
+                // return back()->with('status', 'Invalid login details');
             }
         }
         return back()->with('status', 'Invalid login details');

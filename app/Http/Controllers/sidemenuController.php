@@ -10,25 +10,34 @@ use App\Models\event;
 use App\Models\reservation;
 use DB;
 
+use Illuminate\Support\Facades\Session;
 
 class sidemenuController extends Controller
 {
     public function store(){
-        
-        $Revenue = DB::table('r_events')
-        ->join('events', 'r_events.event_id', '=', 'events.id')
-        ->select('events.*', 'r_events.*')
-        ->sum('events.event_price');
 
-        $Events = event::select('*')->where('event_content','Event')->count();
-        $Reservation = reservation::select('*')
-        ->where('event_status','!=','Finish')
-        ->where('event_status','!=','Canceled')
-        ->count();
-        $Services = event::select('*')->where('event_content','Services')->count();
-        $data = [ $Revenue, $Events, $Reservation, $Services];
-        $Services; 
-        return view('admin.sidemenu',compact('data'));
+        if (Session::get('id')!= null) {
+
+                $Revenue = DB::table('r_events')
+                ->join('events', 'r_events.event_id', '=', 'events.id')
+                ->select('events.*', 'r_events.*')
+                ->sum('events.event_price');
+
+                $Events = event::select('*')->where('event_content','Event')->count();
+                $Reservation = reservation::select('*')
+                ->where('event_status','!=','Finish')
+                ->where('event_status','!=','Canceled')
+                ->count();
+                $Services = event::select('*')->where('event_content','Services')->count();
+                $data = [ $Revenue, $Events, $Reservation, $Services];
+                $Services; 
+            
+            
+      
+            return view('admin.sidemenu',compact('data'));
+        }else{
+            return redirect('/');
+        }
     }
 
   public function login(Request $request){
@@ -38,13 +47,15 @@ class sidemenuController extends Controller
         'password' => ['required'],
     ]);    
 //     $user=User::select("*")->where("")
-// echo $request;
+// echo $request;   
 
 
 $user = User::where('email','=',$request->email)->first();
         if($user){
             if(Hash::check($request->password,$user->password)){
                 // return dito ung redirect 
+                Session::put('id',$user->id);
+              
                 return redirect("adminAuth")->with('message', 'Successfuly Logged In'); 
             }else{
                 // return error dito    
@@ -66,5 +77,11 @@ $user = User::where('email','=',$request->email)->first();
     // }
     // return back()->with('status', 'Invalid login details');
 
+  }
+
+  public function adminlogout()
+  {
+   Session::forget('id');
+    return redirect('/');
   }
 }
